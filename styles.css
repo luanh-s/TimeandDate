@@ -13,6 +13,8 @@ a {
 }
 
 body {
+    background-color: rgb(41, 41, 41);
+    color: rgb(165, 165, 165);
     overflow: hidden;
 }
 
@@ -52,9 +54,6 @@ img {
 }
 
 @media (max-width: 700px) {
-    body {
-        background-color: red;
-    }
     .time {
         width: 50vw;
         /* padding-top: 4vh; */
@@ -81,9 +80,6 @@ img {
 }
 
 @media (min-width: 700px) {
-    body {
-        background-color: lightblue;
-    }
     .time {
         /* padding-top: 8vh; */
         height: 20vh;
@@ -109,9 +105,6 @@ img {
 }
 
 @media (min-width: 1000px) {
-    body {
-        background-color: rgb(27, 172, 87);
-    }
     .time {
         height: 30vh;
         width: 33vw;
@@ -133,9 +126,6 @@ img {
 }
 
 @media (min-width: 1280px) {
-    body {
-        background-color: rgb(207, 134, 74);
-    }
     .time {
         font-size: 5vw;
         /* display: inline-block; */
