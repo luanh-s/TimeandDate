@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- https://www.flaticon.com/br/packs/countrys-flags -->
+<!-- https://timezonedb.com/          APIKEY:NP7LH1F959ZC -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Vitória, Brazil - current and accurate time</title>
+    <meta name="description" content="This fullscreen or popup-window displays a clock showing current time in any time zone in the world.">
+    <meta name="keywords" content="clock, time zone, local time, international, current, big clock, large clock, time, date, count, counts">
+    <!-- <link href="./files2/wstyle_72.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+    <div class="row" style="margin-right: 0;margin-left: 0;">
+        <div id="time" class="time timePrincipal"> </div>
+    </div>
+    <div class="row" style="margin-right: 0;margin-left: 0;">
+        <div id="time2" class="time"> </div>
+        <div id="time3" class="time"> </div>
+        <div id="time4" class="time"> </div>
+        <div id="time5" class="time"> </div>
+        <div id="time6" class="time"> </div>
+        <div id="time7" class="time"> </div>
+    </div>
+    <script src="zones.js"></script>
+    <script src="cidades.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        // VARIAVEIS INICIAIS DO CÓDIGO.
+        var cidades = ["Vitória", "São Paulo", "New York", "Washington DC", "Tokyo", "Berlin", "Beijing"];
+        var gmtdifference = []; //[8.5, 1, 5, 4, 9, 8, -3]
+        var inicial;
+
+        // ADICIONA UM NOVO PROTOTYPE PARA DATE, ONDE É POSSIVEL ADICIONAR HORAS DIRETAMENTE NA NEW DATE;
+        Date.prototype.addHours = function(h) {
+            this.setTime(this.getTime() + (h * 60 * 60 * 1000));
+            return this;
+        }
+
+        // FUNÇÃO PARA TRANFORMAR NUMEROS DE 1-9 EM 01-09;
+        function n(n) {
+            return n > 9 ? "" + n : "0" + n;
+        }
+
+        // FUNÇÃO PARA RETORNAR O VETOR GMTDIFFERENCE CONTENDO OS VALORES DE DIFERENÇA DO FUSO HORARIO. 
+        function getAddHours(cidades) {
+            gmtdifference = [];
+            for (let index = 0; index < cidades.length; index++) {
+                gmtdifference[index] = cidadefuso[cidades[index]];
+                // console.log(cidades[index] + "(+" + n(gmtdifference[0]) + ") - " + cidadefuso[cidades[index]] + "(+" + n(gmtdifference[0]) + ") - " + gmtdifference[index]);
+            }
+            return gmtdifference
+        }
+
+        // FUNÇÃO CHAMADA PARA GERAR O VETOR ANTES DE ENTRAR NA FUNÇÃO DE HORARIO
+        getAddHours(cidades)
+
+        // FUNÇÃO PARA RETORNAR UM HORARIO NO FORMATO "HH:MM:SS", PASSANDO COMO O PARAMETRO ADD O VALOR DE HORAS A SEREM ADICIONADAS.
+        function returnTimeAdded(add) {
+            var now = new Date().addHours(add);
+            return time = n(now.getHours()) + ':' + n(now.getMinutes()) + ':' + n(now.getSeconds()); // again, you get the idea
+        }
+
+        // FUNÇÃO PARA RETORNAR UMA DATA NO FORMATO "DD/MÊS(ABREV)/ANO", PASSANDO COMO O PARAMETRO ADD O VALOR DE HORAS A SEREM ADICIONADAS.
+        function returnDateAdded(add) {
+            // months = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']; // you get the idea
+            months = ['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez']; // you get the idea
+            var now = new Date().addHours(add);
+            // return date = [now.getDate(), months[now.getMonth()], now.getFullYear()].join(' ');
+            return date = [n(now.getDate()), months[now.getMonth()], now.getFullYear()].join('/');
+        }
+
+        function adicionaBandeirinha() {
+
+
+            ((cidades[0] == undefined) ? $("#time").empty() : ((gmtdifference[0] == undefined) ? $("#time").empty() : $('#time').empty().append("<div>" + returnTimeAdded(gmtdifference[0]) + "</div>" + "<div class='dataPrincipal'>" + cidades[0] + "(" + (gmtdifference[0] < 0 ? "-" : "+") + n(gmtdifference[0]) + ") - " + returnDateAdded(gmtdifference[0]) + "</div>")));
+
+
+            // ((cidades[1] == undefined) ? $("#time2").empty() : ((gmtdifference[1] == undefined) ? $("#time2").empty() : $('#time2').empty().append("<div>" + returnTimeAdded(gmtdifference[1]) + "</div>" + "<div class='data'>" + cidades[1] + "(" + (gmtdifference[1] < 0 ? "-" : "+") + n(gmtdifference[1]) + ") - " + returnDateAdded(gmtdifference[1]) + "</div>")));
+            // ((cidades[2] == undefined) ? $("#time3").empty() : ((gmtdifference[2] == undefined) ? $("#time3").empty() : $('#time3').empty().append("<div>" + returnTimeAdded(gmtdifference[2]) + "</div>" + "<div class='data'>" + cidades[2] + "(" + (gmtdifference[2] < 0 ? "-" : "+") + n(gmtdifference[2]) + ") - " + returnDateAdded(gmtdifference[2]) + "</div>")));
+            // ((cidades[3] == undefined) ? $("#time4").empty() : ((gmtdifference[3] == undefined) ? $("#time4").empty() : $('#time4').empty().append("<div>" + returnTimeAdded(gmtdifference[3]) + "</div>" + "<div class='data'>" + cidades[3] + "(" + (gmtdifference[3] < 0 ? "-" : "+") + n(gmtdifference[3]) + ") - " + returnDateAdded(gmtdifference[3]) + "</div>")));
+            // ((cidades[4] == undefined) ? $("#time5").empty() : ((gmtdifference[4] == undefined) ? $("#time5").empty() : $('#time5').empty().append("<div>" + returnTimeAdded(gmtdifference[4]) + "</div>" + "<div class='data'>" + cidades[4] + "(" + (gmtdifference[4] < 0 ? "-" : "+") + n(gmtdifference[4]) + ") - " + returnDateAdded(gmtdifference[4]) + "</div>")));
+            // ((cidades[5] == undefined) ? $("#time6").empty() : ((gmtdifference[5] == undefined) ? $("#time6").empty() : $('#time6').empty().append("<div>" + returnTimeAdded(gmtdifference[5]) + "</div>" + "<div class='data'>" + cidades[5] + "(" + (gmtdifference[5] < 0 ? "-" : "+") + n(gmtdifference[5]) + ") - " + returnDateAdded(gmtdifference[5]) + "</div>")));
+            // ((cidades[6] == undefined) ? $("#time7").empty() : ((gmtdifference[6] == undefined) ? $("#time7").empty() : $('#time7').empty().append("<div>" + returnTimeAdded(gmtdifference[6]) + "</div>" + "<div class='data'>" + cidades[6] + "(" + (gmtdifference[6] < 0 ? "-" : "+") + n(gmtdifference[6]) + ") - " + returnDateAdded(gmtdifference[6]) + "</div>")));
+        }
+
+        // FUNÇÃO QUE GERA O LOOP PARA ATUALIZAR E PREEENCHER OS HORARIOS NO DOM.
+        function updateClock(cidades, gmtdifference) {
+
+            // set the content of the element with the ID time to the formatted string
+            // ((cidades[0] == undefined) ? $("#time").empty() : ((gmtdifference[0] == undefined) ? $("#time").empty() : $('#time').empty().append("<div>" + returnTimeAdded(gmtdifference[0]) + "</div>" + "<div class='dataPrincipal'>" + cidades[0] + "(" + (gmtdifference[0] < 0 ? "-" : "+") + n(gmtdifference[0]) + ") - " + returnDateAdded(gmtdifference[0]) + "</div>")));
+            ((cidades[0] == undefined) ? $("#time").empty() : ((gmtdifference[0] == undefined) ? $("#time").empty() : $('#time').empty().append("<div>" + returnTimeAdded(gmtdifference[0]) + "</div>" + "<div class='dataPrincipal'>" + cidades[0] + "(" + (gmtdifference[0] < 0 ? "-" : "+") + n(gmtdifference[0]) + ") - " + returnDateAdded(gmtdifference[0]) + "</div>")));
+            ((cidades[1] == undefined) ? $("#time2").empty() : ((gmtdifference[1] == undefined) ? $("#time2").empty() : $('#time2').empty().append("<div>" + returnTimeAdded(gmtdifference[1]) + "</div>" + "<div class='data'>" + cidades[1] + "(" + (gmtdifference[1] < 0 ? "-" : "+") + n(gmtdifference[1]) + ") - " + returnDateAdded(gmtdifference[1]) + "</div>")));
+            ((cidades[2] == undefined) ? $("#time3").empty() : ((gmtdifference[2] == undefined) ? $("#time3").empty() : $('#time3').empty().append("<div>" + returnTimeAdded(gmtdifference[2]) + "</div>" + "<div class='data'>" + cidades[2] + "(" + (gmtdifference[2] < 0 ? "-" : "+") + n(gmtdifference[2]) + ") - " + returnDateAdded(gmtdifference[2]) + "</div>")));
+            ((cidades[3] == undefined) ? $("#time4").empty() : ((gmtdifference[3] == undefined) ? $("#time4").empty() : $('#time4').empty().append("<div>" + returnTimeAdded(gmtdifference[3]) + "</div>" + "<div class='data'>" + cidades[3] + "(" + (gmtdifference[3] < 0 ? "-" : "+") + n(gmtdifference[3]) + ") - " + returnDateAdded(gmtdifference[3]) + "</div>")));
+            ((cidades[4] == undefined) ? $("#time5").empty() : ((gmtdifference[4] == undefined) ? $("#time5").empty() : $('#time5').empty().append("<div>" + returnTimeAdded(gmtdifference[4]) + "</div>" + "<div class='data'>" + cidades[4] + "(" + (gmtdifference[4] < 0 ? "-" : "+") + n(gmtdifference[4]) + ") - " + returnDateAdded(gmtdifference[4]) + "</div>")));
+            ((cidades[5] == undefined) ? $("#time6").empty() : ((gmtdifference[5] == undefined) ? $("#time6").empty() : $('#time6').empty().append("<div>" + returnTimeAdded(gmtdifference[5]) + "</div>" + "<div class='data'>" + cidades[5] + "(" + (gmtdifference[5] < 0 ? "-" : "+") + n(gmtdifference[5]) + ") - " + returnDateAdded(gmtdifference[5]) + "</div>")));
+            ((cidades[6] == undefined) ? $("#time7").empty() : ((gmtdifference[6] == undefined) ? $("#time7").empty() : $('#time7').empty().append("<div>" + returnTimeAdded(gmtdifference[6]) + "</div>" + "<div class='data'>" + cidades[6] + "(" + (gmtdifference[6] < 0 ? "-" : "+") + n(gmtdifference[6]) + ") - " + returnDateAdded(gmtdifference[6]) + "</div>")));
+
+            // console.log(cidades, gmtdifference)
+
+            // call this function again in 1000ms
+            inicial = setTimeout(updateClock, 1000, cidades, gmtdifference);
+        }
+
+        // FUNÇÃO QUE INICIALIZA O LOOP DE HORARIOS AO ENTRAR NA PÁGINA
+        updateClock(cidades, gmtdifference)
+
+        // FUNÇÃO PARA PARAR O LOOP ATUAL E COMEÇAR UM NOVO LOOP.
+        function novoRelogio(cidades) {
+            getAddHours(cidades)
+            clearTimeout(inicial)
+                // console.log(cidades, gmtdifference)
+            updateClock(cidades, gmtdifference)
+        }
+    </script>
+    <script src="./files2/wcommon_119.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+
+</html>

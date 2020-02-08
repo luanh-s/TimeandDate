@@ -1,0 +1,155 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.t100 {
+    width: 100%;
+    height: 100%;
+}
+
+.tab {
+    margin: 0 auto;
+}
+
+body {
+    overflow: hidden;
+}
+
+#navz {
+    float: right;
+}
+
+#navz a {
+    font-size: 85%;
+    text-decoration: none;
+    color: #999;
+}
+
+img {
+    display: block;
+}
+
+#wraprem {
+    position: absolute;
+    height: 100%;
+}
+
+#wrap {
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.time {
+    text-align: center;
+    align-items: center;
+    /* padding-top: 20vh; */
+}
+
+.row {
+    width: 100vw;
+}
+
+@media (max-width: 700px) {
+    body {
+        background-color: red;
+    }
+    .time {
+        width: 50vw;
+        /* padding-top: 4vh; */
+        height: 20vh;
+        font-size: 7.5vw;
+    }
+    .timePrincipal {
+        height: 32vh;
+        width: 100vw;
+        /* padding-top: 4vh; */
+        font-size: 18vw;
+    }
+    .data {
+        font-size: 3.25vw;
+    }
+    .dataPrincipal {
+        font-size: 6vw;
+    }
+    .row {
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+        width: 100vw;
+    }
+}
+
+@media (min-width: 700px) {
+    body {
+        background-color: lightblue;
+    }
+    .time {
+        /* padding-top: 8vh; */
+        height: 20vh;
+        width: 50vw;
+        font-size: 5vw;
+        /* display: inline-block; */
+    }
+    .timePrincipal {
+        height: 32vh;
+        width: 100vw;
+        /* padding-top: 4vh; */
+        font-size: 13vw;
+    }
+    /* .timePrincipal>div {
+        max-height: 20vh;
+    } */
+    .data {
+        font-size: 2.5vw;
+    }
+    .dataPrincipal {
+        font-size: 4vw;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: rgb(27, 172, 87);
+    }
+    .time {
+        height: 30vh;
+        width: 33vw;
+        font-size: 5vw;
+        /* display: inline-block; */
+    }
+    .timePrincipal {
+        height: 32vh;
+        width: 100vw;
+        /* padding-top: 4vh; */
+        font-size: 10vw;
+    }
+    .data {
+        font-size: 1.5vw;
+    }
+    .dataPrincipal {
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        background-color: rgb(207, 134, 74);
+    }
+    .time {
+        font-size: 5vw;
+        /* display: inline-block; */
+    }
+    .timePrincipal {
+        height: 40vh;
+        width: 100vw;
+        /* padding-top: 4vh; */
+        font-size: 10vw;
+    }
+    .data {
+        font-size: 1.5vw;
+    }
+    .dataPrincipal {
+        font-size: 3vw;
+    }
+}

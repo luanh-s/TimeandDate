@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://s0.2mdn.net/3797665/1565193285410/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <title></title>
+    <style> body { margin: 0; } </style><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="ad.size" content="height=90,width=728"><script>var clickTag = "https://vimeo.com/";</script>
+  <script type="text/javascript">
+    
+  (function() {
+    var MAX_URL_PARAM_LENGTH = 34;
+    var CLICK_X_URL_KEY = 'nx';
+    var CLICK_Y_URL_KEY = 'ny';
+    var CREATIVE_DIMENSIONS_KEY = 'dim';
+    var AD_URL_PARAM = '&adurl=';
+
+    var relegateNavigation = '';
+    var urlParamMap = {};
+
+    urlParamMap[CLICK_X_URL_KEY] = null;
+    urlParamMap[CLICK_Y_URL_KEY] = null;
+    urlParamMap[CREATIVE_DIMENSIONS_KEY] = null;
+
+    var handleClickTagMessage = function(e) {
+      try {
+        var eventData = JSON.parse(e.data);
+      } catch (err) {
+        return;
+      }
+      if (eventData.isInitClickTag) {
+        if (eventData.clickTags) {
+          for (var i = 0; i < eventData.clickTags.length; i++) {
+            var clkTag = eventData.clickTags[i];
+            window[clkTag.name] = clkTag.url;
+          }
+        } else if (eventData.clickTag) {
+          window.clickTag = eventData.clickTag;
+        }
+        relegateNavigation = eventData.relegateNavigation;
+      }
+    };
+
+    var storeClickCoordinates = function(e) {
+      urlParamMap[CLICK_X_URL_KEY] = Math.round(e.clientX);
+      urlParamMap[CLICK_Y_URL_KEY] = Math.round(e.clientY);
+    };
+
+    var getCreativeDimensions = function() {
+      return window.innerWidth + 'x' + window.innerHeight;
+    }
+
+    var getExitClickParams = function(e) {
+      urlParamMap[CREATIVE_DIMENSIONS_KEY] = getCreativeDimensions();
+
+      var exitParams = '';
+      for (var key in urlParamMap) {
+        exitParams += '&' + key + '=';
+        if (urlParamMap[key] !== null) {
+          exitParams += urlParamMap[key];
+        }
+      }
+      return exitParams;
+    }
+
+    var appendExitClickParams = function(url) {
+      var adUrlIndex = url.toLowerCase().indexOf(AD_URL_PARAM);
+      var paramsToBeAdded = getExitClickParams();
+      if (adUrlIndex > -1 && paramsToBeAdded.length <= MAX_URL_PARAM_LENGTH) {
+        url = url.substr(0, adUrlIndex) + paramsToBeAdded +
+          url.substr(adUrlIndex);
+      };
+      return url;
+    };
+
+    if (open.call) {
+      window.open = function(open) {
+        return function(url, name, features) {
+          url = appendExitClickParams(url);
+          if (relegateNavigation === 'parent') {
+            var message = {'clickTag': url, 'isPostClickTag': true};
+            parent.postMessage(JSON.stringify(message), '*');
+          } else {
+            var args = [url, name];
+            if (features) {
+              args.push(features);
+            }
+            open.apply(window, args);
+          }
+        };
+      }(window.open);
+    }
+
+    if (window.addEventListener) {
+      window.addEventListener(
+          'message', handleClickTagMessage, false);
+      window.addEventListener('mousedown', storeClickCoordinates, true);
+    } else {
+      window.attachEvent('onmessage', handleClickTagMessage);
+    }
+  })();
+    
+  </script></head>
+  <body>
+    <script src="./tweenmax_1.20.0_d360d9a082ccc13b1a1a9b153f86b378_min.js.download" type="text/javascript"></script>
+    <script src="./blueprint.js.download" type="text/javascript"></script>
+    <script src="./banner.js.download" type="text/javascript"></script>
+  
+
+<div id="banner" style="cursor: pointer; overflow: hidden; background-color: rgb(147, 206, 146); height: 90px; width: 728px; position: absolute; transform: translate3d(0px, 0px, 0px);"><div id="stage" style="height: 90px; width: 728px; line-height: 0; top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px);"></div><div id="bg" style="height: 90px; width: 728px; line-height: 0; top: 0px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px);"></div><div id="txt_1" style="background-size: contain; background-repeat: no-repeat; height: 98px; width: 380px; background-image: url(&quot;https://s0.2mdn.net/3797665/1565193285410/txt_1.png&quot;); line-height: 27; top: -5px; left: 136px; position: absolute; transform: translate3d(0px, 0px, 0px); opacity: 0;"></div><div id="txt_2" style="background-size: contain; background-repeat: no-repeat; height: 71px; width: 216px; background-image: url(&quot;https://s0.2mdn.net/3797665/1565193285410/txt_2.png&quot;); line-height: 26.75; top: -3px; left: 136px; position: absolute; transform: translate3d(0px, 0px, 0px); opacity: 1;"></div><div id="txt_3" style="background-size: contain; background-repeat: no-repeat; height: 43px; width: 147px; background-image: url(&quot;https://s0.2mdn.net/3797665/1565193285410/txt_3.png&quot;); line-height: 15.6; top: 37px; left: 146px; position: absolute; transform: translate3d(0px, 0px, 0px); opacity: 1;"></div><div id="cta" style="line-height: 15.6; top: 27px; left: 582px; position: absolute; transform: translate3d(0px, 0px, 0px); border-radius: 4px; background-color: rgb(0, 0, 0); height: 36px; width: 125px;"><div id="cta_1" style="background-size: contain; background-repeat: no-repeat; height: 36px; width: 125px; background-image: url(&quot;https://s0.2mdn.net/3797665/1565193285410/cta_1.png&quot;); position: absolute; transform: translate3d(0px, 0px, 0px);"></div></div><div id="ctaHover" style="line-height: 15.6; top: -2px; left: -2px; position: absolute; transform: translate3d(0px, 0px, 0px); opacity: 0;"><div id="ctaHover_1" style="background-size: contain; background-repeat: no-repeat; height: 36px; width: 125px; background-image: url(&quot;https://s0.2mdn.net/3797665/1565193285410/ctaHover_1.png&quot;); position: absolute; transform: translate3d(0px, 0px, 0px);"></div></div><div id="progressBase" style="height: 15px; width: 970px; line-height: 0; top: 83px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 0); box-sizing: border-box; border-bottom: 2px solid rgb(116, 150, 107); border-top: 2px solid rgb(116, 150, 107); background-color: rgb(91, 116, 84); transform-origin: 0px 50% 0px;"></div><div id="progress" style="height: 12px; width: 237px; line-height: 0; top: 85px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(3.07173, 0); background-color: rgb(0, 0, 0); transform-origin: 0px 50% 0px;"></div><div id="mark3" style="height: 13px; width: 2px; line-height: 0; top: 84px; left: 610px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 0); background-color: rgb(204, 204, 204); transform-origin: 0px 50% 0px;"></div><div id="mark2" style="height: 13px; width: 2px; line-height: 0; top: 84px; left: 465px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 0); background-color: rgb(204, 204, 204); transform-origin: 0px 50% 0px;"></div><div id="mark1" style="height: 13px; width: 2px; line-height: 0; top: 84px; left: 195px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(1, 0); background-color: rgb(255, 255, 255); transform-origin: 0px 50% 0px;"></div><div id="box1" style="height: 49px; width: 109px; line-height: 0; top: 8px; left: 431px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(0, 0); border-radius: 6px; box-sizing: border-box; border: 2px solid rgb(0, 0, 0); background-color: rgb(147, 205, 145); transform-origin: 0% 50% 0px;"><div id="time1" style="background-size: contain; background-repeat: no-repeat; height: 12px; width: 37px; background-image: url(&quot;https://s0.2mdn.net/3797665/1565193285410/time1.png&quot;); line-height: 0; top: 17px; left: 10px; position: absolute; transform: translate3d(0px, 0px, 0px);"></div><div id="icon1" style="background-size: contain; background-repeat: no-repeat; height: 24px; width: 31px; background-image: url(&quot;https://s0.2mdn.net/3797665/1565193285410/icon1.png&quot;); line-height: 0; top: 10px; left: 56px; position: absolute; transform: translate3d(0px, 0px, 0px);"></div></div><div id="box2" style="height: 48px; width: 109px; line-height: 0; top: 26px; left: 273px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(0, 0); border-radius: 6px; box-sizing: border-box; border: 2px solid rgb(0, 0, 0); background-color: rgb(147, 205, 145); transform-origin: 0% 50% 0px;"><div id="time2" style="background-size: contain; background-repeat: no-repeat; height: 11px; width: 37px; background-image: url(&quot;https://s0.2mdn.net/3797665/1565193285410/time2.png&quot;); line-height: 0; top: 17px; left: 10px; position: absolute; transform: translate3d(0px, 0px, 0px);"></div><div id="icon2" style="background-size: contain; background-repeat: no-repeat; height: 27px; width: 27px; background-image: url(&quot;https://s0.2mdn.net/3797665/1565193285410/icon2.png&quot;); line-height: 0; top: 5px; left: 60px; position: absolute; transform: translate3d(0px, 0px, 0px);"></div></div><div id="logo_vimeo" style="background-size: contain; background-repeat: no-repeat; height: 23px; width: 82px; background-image: url(&quot;https://s0.2mdn.net/3797665/1565193285410/logo_vimeo.png&quot;); line-height: 0; top: 34px; left: 22px; position: absolute; transform: translate3d(0px, 0px, 0px);"></div><div id="top" style="height: 10px; width: 728px; line-height: 0; top: -10px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px);"></div><div id="bottom" style="height: 10px; width: 728px; line-height: 0; top: 90px; left: 0px; position: absolute; transform: translate3d(0px, 0px, 0px);"></div><div id="left" style="height: 90px; width: 10px; line-height: 0; top: 0px; left: -10px; position: absolute; transform: translate3d(0px, 0px, 0px);"></div><div id="right" style="height: 90px; width: 10px; line-height: 0; top: 0px; left: 728px; position: absolute; transform: translate3d(0px, 0px, 0px);"></div><div style="box-sizing: border-box; border: 1px solid rgb(0, 0, 0); height: 100%; width: 100%; position: absolute; transform: translate3d(0px, 0px, 0px);"></div><div style="box-sizing: border-box; border: 2px solid rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-radius: 50%; top: 27px; left: 415px; height: 11px; width: 11px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(0, 0);"></div><div style="box-sizing: border-box; border: 2px solid rgb(0, 0, 0); background-color: rgb(255, 255, 255); border-radius: 50%; top: 45px; left: 257px; height: 11px; width: 11px; position: absolute; transform: translate3d(0px, 0px, 0px) scale(0, 0);"></div></div></body></html>
