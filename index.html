@@ -17,9 +17,9 @@
     <!-- <button type="button" class="btn btn-primary">Primary</button> -->
     <div class="row" style="margin-right: 0;margin-left: 0;">
         <!-- <div id="bandeira" class="bandeira"></div> -->
-        <div id="time0" class="time timePrincipal"></div>
-    </div>
-    <div class="row" style="margin-right: 0;margin-left: 0;">
+        <div id="time0" class="time"></div>
+        <!-- </div> -->
+        <!-- <div class="row" style="margin-right: 0;margin-left: 0;"> -->
         <div id="time1" class="time"> </div>
         <div id="time2" class="time"> </div>
         <div id="time3" class="time"> </div>
@@ -87,11 +87,12 @@
 
         function appendBandeira(cidades, gmtdifference) {
             for (let index = 0; index < cidades.length; index++) {
-                var band = paises[index];
-                var lowerbandeira = band.toLowerCase();
+                if (paises[index] != undefined) {
+                    var band = paises[index];
+                    var lowerbandeira = band.toLowerCase();
 
-                ((cidades[index] == undefined) ? $("#time" + index).remove() : ((gmtdifference[index] == undefined) ? $("#time" + index).remove() : $("#time" + index).empty().append("<img id='bandeira" + index + "' class='" + (index == 0 ? "bandeiraPrincipal" : "bandeira") + "' src='png-countries/" + lowerbandeira + ".png'> ")));
-
+                    ((cidades[index] == undefined) ? $("#time" + index).remove() : ((gmtdifference[index] == undefined) ? $("#time" + index).remove() : $("#time" + index).empty().append("<img id='bandeira" + index + "' class='" + "bandeira" + "' src='png-countries/" + lowerbandeira + ".png'> ")));
+                }
             }
 
 
@@ -120,10 +121,10 @@
 
             for (let index = 0; index < cidades.length; index++) {
                 if (cidades[index] == undefined || gmtdifference[index] == undefined) {
-                    $("#time" + index).empty();
+                    $("#time" + index).remove();
                 } else {
                     $('#time' + index).children(".contband").remove();
-                    $('#time' + index).append("<div class='contband'><div>" + returnTimeAdded(gmtdifference[index]) + "</div>" + "<div class='" + (index == 0 ? "dataPrincipal" : "data") + "'>" + cidades[index] + " - " + returnDateAdded(gmtdifference[index]) + "</div></div>");
+                    $('#time' + index).append("<div class='contband'><div>" + returnTimeAdded(gmtdifference[index]) + "</div>" + "<div class='" + "data" + "'>" + cidades[index] + " - " + returnDateAdded(gmtdifference[index]) + "</div></div>");
                 }
             }
 
@@ -140,17 +141,27 @@
 
             // call this function again in 1000ms
             inicial = setTimeout(updateClock, 1000, cidades, gmtdifference);
+            maximizaPrimeira()
+        }
+
+        function maximizaPrimeira() {
+            $(".row").children(".time").first().removeClass().addClass("time timePrincipal");
+            $(".row").children(".time").first().children("img").removeClass().addClass("bandeiraPrincipal");
+            $(".row").children(".time").first().children(".contband").children("div").last().removeClass().addClass("dataPrincipal");
+            // $(".row").children(".time > .contband").first().removeClass().addClass("time");
         }
 
         // FUNÇÃO QUE INICIALIZA O LOOP DE HORARIOS AO ENTRAR NA PÁGINA
         appendBandeira(cidades, gmtdifference)
         updateClock(cidades, gmtdifference)
+        maximizaPrimeira()
 
         // FUNÇÃO PARA PARAR O LOOP ATUAL E COMEÇAR UM NOVO LOOP.
         function novoRelogio(cidades) {
             getAddHours(cidades)
             clearTimeout(inicial)
                 // console.log(cidades, gmtdifference)
+            appendBandeira(cidades, gmtdifference)
             updateClock(cidades, gmtdifference)
         }
     </script>
