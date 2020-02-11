@@ -86,13 +86,23 @@
         }
 
         function appendBandeira(cidades, gmtdifference) {
-            ((cidades[0] == undefined) ? $("#time0").remove() : ((gmtdifference[0] == undefined) ? $("#time0").remove() : $('#time0').empty().append("<img id='bandeira0' class='bandeiraPrincipal' src='png-countries/" + paises[0] + ".png'>")));
-            ((cidades[1] == undefined) ? $("#time1").remove() : ((gmtdifference[1] == undefined) ? $("#time1").remove() : $('#time1').empty().append("<img id='bandeira1' class='bandeira' src='png-countries/" + paises[1] + ".png'>")));
-            ((cidades[2] == undefined) ? $("#time2").remove() : ((gmtdifference[2] == undefined) ? $("#time2").remove() : $('#time2').empty().append("<img id='bandeira2' class='bandeira' src='png-countries/" + paises[2] + ".png'>")));
-            ((cidades[3] == undefined) ? $("#time3").remove() : ((gmtdifference[3] == undefined) ? $("#time3").remove() : $('#time3').empty().append("<img id='bandeira3' class='bandeira' src='png-countries/" + paises[3] + ".png'>")));
-            ((cidades[4] == undefined) ? $("#time4").remove() : ((gmtdifference[4] == undefined) ? $("#time4").remove() : $('#time4').empty().append("<img id='bandeira4' class='bandeira' src='png-countries/" + paises[4] + ".png'>")));
-            ((cidades[5] == undefined) ? $("#time5").remove() : ((gmtdifference[5] == undefined) ? $("#time5").remove() : $('#time5').empty().append("<img id='bandeira5' class='bandeira' src='png-countries/" + paises[5] + ".png'>")));
-            ((cidades[6] == undefined) ? $("#time6").remove() : ((gmtdifference[6] == undefined) ? $("#time6").remove() : $('#time6').empty().append("<img id='bandeira6' class='bandeira' src='png-countries/" + paises[6] + ".png'>")));
+            for (let index = 0; index < cidades.length; index++) {
+                var band = paises[index];
+                var lowerbandeira = band.toLowerCase();
+
+                ((cidades[index] == undefined) ? $("#time" + index).remove() : ((gmtdifference[index] == undefined) ? $("#time" + index).remove() : $("#time" + index).empty().append("<img id='bandeira" + index + "' class='" + (index == 0 ? "bandeiraPrincipal" : "bandeira") + "' src='png-countries/" + lowerbandeira + ".png'> ")));
+
+            }
+
+
+
+
+            // ((cidades[1] == undefined) ? $("#time1").remove() : ((gmtdifference[1] == undefined) ? $("#time1").remove() : $('#time1').empty().append("<img id='bandeira1' class='bandeira' src='png-countries/" + toLowerCase(ppaises[1]) + ".png'>")));
+            // ((cidades[2] == undefined) ? $("#time2").remove() : ((gmtdifference[2] == undefined) ? $("#time2").remove() : $('#time2').empty().append("<img id='bandeira2' class='bandeira' src='png-countries/" + toLowerCase(ppaises[2]) + ".png'>")));
+            // ((cidades[3] == undefined) ? $("#time3").remove() : ((gmtdifference[3] == undefined) ? $("#time3").remove() : $('#time3').empty().append("<img id='bandeira3' class='bandeira' src='png-countries/" + toLowerCase(ppaises[3]) + ".png'>")));
+            // ((cidades[4] == undefined) ? $("#time4").remove() : ((gmtdifference[4] == undefined) ? $("#time4").remove() : $('#time4').empty().append("<img id='bandeira4' class='bandeira' src='png-countries/" + toLowerCase(ppaises[4]) + ".png'>")));
+            // ((cidades[5] == undefined) ? $("#time5").remove() : ((gmtdifference[5] == undefined) ? $("#time5").remove() : $('#time5').empty().append("<img id='bandeira5' class='bandeira' src='png-countries/" + toLowerCase(ppaises[5]) + ".png'>")));
+            // ((cidades[6] == undefined) ? $("#time6").remove() : ((gmtdifference[6] == undefined) ? $("#time6").remove() : $('#time6').empty().append("<img id='bandeira6' class='bandeira' src='png-countries/" + toLowerCase(ppaises[6]) + ".png'>")));
         }
 
         // FUNÇÃO QUE GERA O LOOP PARA ATUALIZAR E PREEENCHER OS HORARIOS NO DOM.
@@ -144,7 +154,7 @@
             updateClock(cidades, gmtdifference)
         }
     </script>
-    <script src="./files2/wcommon_119.js"></script>
+    <!-- <script src="./files2/wcommon_119.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
