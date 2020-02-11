@@ -7,31 +7,31 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'Ásia/Dubai': {
+        'Asia/Dubai': {
             countryCode: "AE",
             countryName: "United Arab Emirates",
-            zoneName: "Ásia/Dubai",
+            zoneName: "Asia/Dubai",
             gmtOffset: "14400",
             timestamp: "1581135730"
         },
-        'Ásia/Kabul': {
+        'Asia/Kabul': {
             countryCode: "AF",
             countryName: "Afghanistan",
-            zoneName: "Ásia/Kabul",
+            zoneName: "Asia/Kabul",
             gmtOffset: "16200",
             timestamp: "1581137530"
         },
-        'América/Antigua': {
+        'America/Antigua': {
             countryCode: "AG",
             countryName: "Antigua and Barbuda",
-            zoneName: "América/Antigua",
+            zoneName: "America/Antigua",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Anguilla': {
+        'America/Anguilla': {
             countryCode: "AI",
             countryName: "Anguilla",
-            zoneName: "América/Anguilla",
+            zoneName: "America/Anguilla",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
@@ -42,17 +42,17 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'Ásia/Yerevan': {
+        'Asia/Yerevan': {
             countryCode: "AM",
             countryName: "Armenia",
-            zoneName: "Ásia/Yerevan",
+            zoneName: "Asia/Yerevan",
             gmtOffset: "14400",
             timestamp: "1581135730"
         },
-        'África/Luanda': {
+        'Africa/Luanda': {
             countryCode: "AO",
             countryName: "Angola",
-            zoneName: "África/Luanda",
+            zoneName: "Africa/Luanda",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
@@ -126,93 +126,93 @@ var horariosDB = {
             gmtOffset: "21600",
             timestamp: "1581142930"
         },
-        'América/Argentina/Buenos Aires': {
+        'America/Argentina/Buenos Aires': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/Buenos Aires",
+            zoneName: "America/Argentina/Buenos Aires",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Argentina/Catamarca': {
+        'America/Argentina/Catamarca': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/Catamarca",
+            zoneName: "America/Argentina/Catamarca",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Argentina/Cordoba': {
+        'America/Argentina/Cordoba': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/Cordoba",
+            zoneName: "America/Argentina/Cordoba",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Argentina/Jujuy': {
+        'America/Argentina/Jujuy': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/Jujuy",
+            zoneName: "America/Argentina/Jujuy",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Argentina/La Rioja': {
+        'America/Argentina/La Rioja': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/La Rioja",
+            zoneName: "America/Argentina/La Rioja",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Argentina/Mendoza': {
+        'America/Argentina/Mendoza': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/Mendoza",
+            zoneName: "America/Argentina/Mendoza",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Argentina/Rio Gallegos': {
+        'America/Argentina/Rio Gallegos': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/Rio Gallegos",
+            zoneName: "America/Argentina/Rio Gallegos",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Argentina/Salta': {
+        'America/Argentina/Salta': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/Salta",
+            zoneName: "America/Argentina/Salta",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Argentina/San Juan': {
+        'America/Argentina/San Juan': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/San Juan",
+            zoneName: "America/Argentina/San Juan",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Argentina/San Luis': {
+        'America/Argentina/San Luis': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/San Luis",
+            zoneName: "America/Argentina/San Luis",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Argentina/Tucuman': {
+        'America/Argentina/Tucuman': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/Tucuman",
+            zoneName: "America/Argentina/Tucuman",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Argentina/Ushuaia': {
+        'America/Argentina/Ushuaia': {
             countryCode: "AR",
             countryName: "Argentina",
-            zoneName: "América/Argentina/Ushuaia",
+            zoneName: "America/Argentina/Ushuaia",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
         'Pacific/Pago Pago': {
             countryCode: "AS",
-            countryName: "Américan Samoa",
+            countryName: "American Samoa",
             zoneName: "Pacific/Pago Pago",
             gmtOffset: "-39600",
             timestamp: "1581081730"
@@ -315,10 +315,10 @@ var horariosDB = {
             gmtOffset: "39600",
             timestamp: "1581160930"
         },
-        'América/Aruba': {
+        'America/Aruba': {
             countryCode: "AW",
             countryName: "Aruba",
-            zoneName: "América/Aruba",
+            zoneName: "America/Aruba",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
@@ -329,10 +329,10 @@ var horariosDB = {
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'Ásia/Baku': {
+        'Asia/Baku': {
             countryCode: "AZ",
             countryName: "Azerbaijan",
-            zoneName: "Ásia/Baku",
+            zoneName: "Asia/Baku",
             gmtOffset: "14400",
             timestamp: "1581135730"
         },
@@ -343,17 +343,17 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'América/Barbados': {
+        'America/Barbados': {
             countryCode: "BB",
             countryName: "Barbados",
-            zoneName: "América/Barbados",
+            zoneName: "America/Barbados",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'Ásia/Dhaka': {
+        'Asia/Dhaka': {
             countryCode: "BD",
             countryName: "Bangladesh",
-            zoneName: "Ásia/Dhaka",
+            zoneName: "Asia/Dhaka",
             gmtOffset: "21600",
             timestamp: "1581142930"
         },
@@ -364,10 +364,10 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'África/Ouagadougou': {
+        'Africa/Ouagadougou': {
             countryCode: "BF",
             countryName: "Burkina Faso",
-            zoneName: "África/Ouagadougou",
+            zoneName: "Africa/Ouagadougou",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
@@ -378,31 +378,31 @@ var horariosDB = {
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'Ásia/Bahrain': {
+        'Asia/Bahrain': {
             countryCode: "BH",
             countryName: "Bahrain",
-            zoneName: "Ásia/Bahrain",
+            zoneName: "Asia/Bahrain",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
-        'África/Bujumbura': {
+        'Africa/Bujumbura': {
             countryCode: "BI",
             countryName: "Burundi",
-            zoneName: "África/Bujumbura",
+            zoneName: "Africa/Bujumbura",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'África/Porto-Novo': {
+        'Africa/Porto-Novo': {
             countryCode: "BJ",
             countryName: "Benin",
-            zoneName: "África/Porto-Novo",
+            zoneName: "Africa/Porto-Novo",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'América/St Barthelemy': {
+        'America/St Barthelemy': {
             countryCode: "BL",
-            countryName: "Saint Barthélemy",
-            zoneName: "América/St Barthelemy",
+            countryName: "Saint Barthelemy",
+            zoneName: "America/St Barthelemy",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
@@ -413,157 +413,157 @@ var horariosDB = {
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'Ásia/Brunei': {
+        'Asia/Brunei': {
             countryCode: "BN",
             countryName: "Brunei",
-            zoneName: "Ásia/Brunei",
+            zoneName: "Asia/Brunei",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
-        'América/La Paz': {
+        'America/La Paz': {
             countryCode: "BO",
             countryName: "Bolivia",
-            zoneName: "América/La Paz",
+            zoneName: "America/La Paz",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Kralendijk': {
+        'America/Kralendijk': {
             countryCode: "BQ",
             countryName: "Bonaire, Saint Eustatius and Saba",
-            zoneName: "América/Kralendijk",
+            zoneName: "America/Kralendijk",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Araguaina': {
+        'America/Araguaina': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Araguaina",
+            zoneName: "America/Araguaina",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Bahia': {
+        'America/Bahia': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Bahia",
+            zoneName: "America/Bahia",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Belem': {
+        'America/Belem': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Belem",
+            zoneName: "America/Belem",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Boa Vista': {
+        'America/Boa Vista': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Boa Vista",
+            zoneName: "America/Boa Vista",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Campo Grande': {
+        'America/Campo Grande': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Campo Grande",
+            zoneName: "America/Campo Grande",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Cuiaba': {
+        'America/Cuiaba': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Cuiaba",
+            zoneName: "America/Cuiaba",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Eirunepe': {
+        'America/Eirunepe': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Eirunepe",
+            zoneName: "America/Eirunepe",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Fortaleza': {
+        'America/Fortaleza': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Fortaleza",
+            zoneName: "America/Fortaleza",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Maceio': {
+        'America/Maceio': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Maceio",
+            zoneName: "America/Maceio",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Manaus': {
+        'America/Manaus': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Manaus",
+            zoneName: "America/Manaus",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Noronha': {
+        'America/Noronha': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Noronha",
+            zoneName: "America/Noronha",
             gmtOffset: "-7200",
             timestamp: "1581114130"
         },
-        'América/Porto Velho': {
+        'America/Porto Velho': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Porto Velho",
+            zoneName: "America/Porto Velho",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Recife': {
+        'America/Recife': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Recife",
+            zoneName: "America/Recife",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Rio Branco': {
+        'America/Rio Branco': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Rio Branco",
+            zoneName: "America/Rio Branco",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Santarem': {
+        'America/Santarem': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Santarem",
+            zoneName: "America/Santarem",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Sao Paulo': {
+        'America/Sao Paulo': {
             countryCode: "BR",
             countryName: "Brazil",
-            zoneName: "América/Sao Paulo",
+            zoneName: "America/Sao Paulo",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Nassau': {
+        'America/Nassau': {
             countryCode: "BS",
             countryName: "Bahamas",
-            zoneName: "América/Nassau",
+            zoneName: "America/Nassau",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'Ásia/Thimphu': {
+        'Asia/Thimphu': {
             countryCode: "BT",
             countryName: "Bhutan",
-            zoneName: "Ásia/Thimphu",
+            zoneName: "Asia/Thimphu",
             gmtOffset: "21600",
             timestamp: "1581142930"
         },
-        'África/Gaborone': {
+        'Africa/Gaborone': {
             countryCode: "BW",
             countryName: "Botswana",
-            zoneName: "África/Gaborone",
+            zoneName: "Africa/Gaborone",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
@@ -574,206 +574,206 @@ var horariosDB = {
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
-        'América/Belize': {
+        'America/Belize': {
             countryCode: "BZ",
             countryName: "Belize",
-            zoneName: "América/Belize",
+            zoneName: "America/Belize",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Atikokan': {
+        'America/Atikokan': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Atikokan",
+            zoneName: "America/Atikokan",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Blanc-Sablon': {
+        'America/Blanc-Sablon': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Blanc-Sablon",
+            zoneName: "America/Blanc-Sablon",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Cambridge Bay': {
+        'America/Cambridge Bay': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Cambridge Bay",
+            zoneName: "America/Cambridge Bay",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Creston': {
+        'America/Creston': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Creston",
+            zoneName: "America/Creston",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Dawson': {
+        'America/Dawson': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Dawson",
+            zoneName: "America/Dawson",
             gmtOffset: "-28800",
             timestamp: "1581092530"
         },
-        'América/Dawson Creek': {
+        'America/Dawson Creek': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Dawson Creek",
+            zoneName: "America/Dawson Creek",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Edmonton': {
+        'America/Edmonton': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Edmonton",
+            zoneName: "America/Edmonton",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Fort Nelson': {
+        'America/Fort Nelson': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Fort Nelson",
+            zoneName: "America/Fort Nelson",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Glace Bay': {
+        'America/Glace Bay': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Glace Bay",
+            zoneName: "America/Glace Bay",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Goose Bay': {
+        'America/Goose Bay': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Goose Bay",
+            zoneName: "America/Goose Bay",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Halifax': {
+        'America/Halifax': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Halifax",
+            zoneName: "America/Halifax",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Inuvik': {
+        'America/Inuvik': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Inuvik",
+            zoneName: "America/Inuvik",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Iqaluit': {
+        'America/Iqaluit': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Iqaluit",
+            zoneName: "America/Iqaluit",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Moncton': {
+        'America/Moncton': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Moncton",
+            zoneName: "America/Moncton",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Nipigon': {
+        'America/Nipigon': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Nipigon",
+            zoneName: "America/Nipigon",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Pangnirtung': {
+        'America/Pangnirtung': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Pangnirtung",
+            zoneName: "America/Pangnirtung",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Rainy River': {
+        'America/Rainy River': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Rainy River",
+            zoneName: "America/Rainy River",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Rankin Inlet': {
+        'America/Rankin Inlet': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Rankin Inlet",
+            zoneName: "America/Rankin Inlet",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Regina': {
+        'America/Regina': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Regina",
+            zoneName: "America/Regina",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Resolute': {
+        'America/Resolute': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Resolute",
+            zoneName: "America/Resolute",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/St Johns': {
+        'America/St Johns': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/St Johns",
+            zoneName: "America/St Johns",
             gmtOffset: "-12600",
             timestamp: "1581108730"
         },
-        'América/Swift Current': {
+        'America/Swift Current': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Swift Current",
+            zoneName: "America/Swift Current",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Thunder Bay': {
+        'America/Thunder Bay': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Thunder Bay",
+            zoneName: "America/Thunder Bay",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Toronto': {
+        'America/Toronto': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Toronto",
+            zoneName: "America/Toronto",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Vancouver': {
+        'America/Vancouver': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Vancouver",
+            zoneName: "America/Vancouver",
             gmtOffset: "-28800",
             timestamp: "1581092530"
         },
-        'América/Whitehorse': {
+        'America/Whitehorse': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Whitehorse",
+            zoneName: "America/Whitehorse",
             gmtOffset: "-28800",
             timestamp: "1581092530"
         },
-        'América/Winnipeg': {
+        'America/Winnipeg': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Winnipeg",
+            zoneName: "America/Winnipeg",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Yellowknife': {
+        'America/Yellowknife': {
             countryCode: "CA",
             countryName: "Canada",
-            zoneName: "América/Yellowknife",
+            zoneName: "America/Yellowknife",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
@@ -784,31 +784,31 @@ var horariosDB = {
             gmtOffset: "23400",
             timestamp: "1581144730"
         },
-        'África/Kinshasa': {
+        'Africa/Kinshasa': {
             countryCode: "CD",
             countryName: "Democratic Republic of the Congo",
-            zoneName: "África/Kinshasa",
+            zoneName: "Africa/Kinshasa",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'África/Lubumbashi': {
+        'Africa/Lubumbashi': {
             countryCode: "CD",
             countryName: "Democratic Republic of the Congo",
-            zoneName: "África/Lubumbashi",
+            zoneName: "Africa/Lubumbashi",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'África/Bangui': {
+        'Africa/Bangui': {
             countryCode: "CF",
-            countryName: "Central Áfrican Republic",
-            zoneName: "África/Bangui",
+            countryName: "Central African Republic",
+            zoneName: "Africa/Bangui",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'África/Brazzaville': {
+        'Africa/Brazzaville': {
             countryCode: "CG",
             countryName: "Republic of the Congo",
-            zoneName: "África/Brazzaville",
+            zoneName: "Africa/Brazzaville",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
@@ -819,10 +819,10 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'África/Abidjan': {
+        'Africa/Abidjan': {
             countryCode: "CI",
             countryName: "Ivory Coast",
-            zoneName: "África/Abidjan",
+            zoneName: "Africa/Abidjan",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
@@ -833,17 +833,17 @@ var horariosDB = {
             gmtOffset: "-36000",
             timestamp: "1581085330"
         },
-        'América/Punta Arenas': {
+        'America/Punta Arenas': {
             countryCode: "CL",
             countryName: "Chile",
-            zoneName: "América/Punta Arenas",
+            zoneName: "America/Punta Arenas",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Santiago': {
+        'America/Santiago': {
             countryCode: "CL",
             countryName: "Chile",
-            zoneName: "América/Santiago",
+            zoneName: "America/Santiago",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
@@ -854,45 +854,45 @@ var horariosDB = {
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'África/Douala': {
+        'Africa/Douala': {
             countryCode: "CM",
             countryName: "Cameroon",
-            zoneName: "África/Douala",
+            zoneName: "Africa/Douala",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'Ásia/Shanghai': {
+        'Asia/Shanghai': {
             countryCode: "CN",
             countryName: "China",
-            zoneName: "Ásia/Shanghai",
+            zoneName: "Asia/Shanghai",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
-        'Ásia/Urumqi': {
+        'Asia/Urumqi': {
             countryCode: "CN",
             countryName: "China",
-            zoneName: "Ásia/Urumqi",
+            zoneName: "Asia/Urumqi",
             gmtOffset: "21600",
             timestamp: "1581142930"
         },
-        'América/Bogota': {
+        'America/Bogota': {
             countryCode: "CO",
             countryName: "Colombia",
-            zoneName: "América/Bogota",
+            zoneName: "America/Bogota",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Costa Rica': {
+        'America/Costa Rica': {
             countryCode: "CR",
             countryName: "Costa Rica",
-            zoneName: "América/Costa Rica",
+            zoneName: "America/Costa Rica",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Havana': {
+        'America/Havana': {
             countryCode: "CU",
             countryName: "Cuba",
-            zoneName: "América/Havana",
+            zoneName: "America/Havana",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
@@ -903,10 +903,10 @@ var horariosDB = {
             gmtOffset: "-3600",
             timestamp: "1581117730"
         },
-        'América/Curacao': {
+        'America/Curacao': {
             countryCode: "CW",
             countryName: "Curaçao",
-            zoneName: "América/Curacao",
+            zoneName: "America/Curacao",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
@@ -917,17 +917,17 @@ var horariosDB = {
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
-        'Ásia/Famagusta': {
+        'Asia/Famagusta': {
             countryCode: "CY",
             countryName: "Cyprus",
-            zoneName: "Ásia/Famagusta",
+            zoneName: "Asia/Famagusta",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'Ásia/Nicosia': {
+        'Asia/Nicosia': {
             countryCode: "CY",
             countryName: "Cyprus",
-            zoneName: "Ásia/Nicosia",
+            zoneName: "Asia/Nicosia",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
@@ -952,10 +952,10 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'África/Djibouti': {
+        'Africa/Djibouti': {
             countryCode: "DJ",
             countryName: "Djibouti",
-            zoneName: "África/Djibouti",
+            zoneName: "Africa/Djibouti",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
@@ -966,31 +966,31 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'América/Dominica': {
+        'America/Dominica': {
             countryCode: "DM",
             countryName: "Dominica",
-            zoneName: "América/Dominica",
+            zoneName: "America/Dominica",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Santo Domingo': {
+        'America/Santo Domingo': {
             countryCode: "DO",
             countryName: "Dominican Republic",
-            zoneName: "América/Santo Domingo",
+            zoneName: "America/Santo Domingo",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'África/Algiers': {
+        'Africa/Algiers': {
             countryCode: "DZ",
             countryName: "Algeria",
-            zoneName: "África/Algiers",
+            zoneName: "Africa/Algiers",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'América/Guayaquil': {
+        'America/Guayaquil': {
             countryCode: "EC",
             countryName: "Ecuador",
-            zoneName: "América/Guayaquil",
+            zoneName: "America/Guayaquil",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
@@ -1008,31 +1008,31 @@ var horariosDB = {
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'África/Cairo': {
+        'Africa/Cairo': {
             countryCode: "EG",
             countryName: "Egypt",
-            zoneName: "África/Cairo",
+            zoneName: "Africa/Cairo",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'África/El Aaiun': {
+        'Africa/El Aaiun': {
             countryCode: "EH",
             countryName: "Western Sahara",
-            zoneName: "África/El Aaiun",
+            zoneName: "Africa/El Aaiun",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'África/Asmara': {
+        'Africa/Asmara': {
             countryCode: "ER",
             countryName: "Eritrea",
-            zoneName: "África/Asmara",
+            zoneName: "Africa/Asmara",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
-        'África/Ceuta': {
+        'Africa/Ceuta': {
             countryCode: "ES",
             countryName: "Spain",
-            zoneName: "África/Ceuta",
+            zoneName: "Africa/Ceuta",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
@@ -1050,10 +1050,10 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'África/Addis Ababa': {
+        'Africa/Addis Ababa': {
             countryCode: "ET",
             countryName: "Ethiopia",
-            zoneName: "África/Addis Ababa",
+            zoneName: "Africa/Addis Ababa",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
@@ -1113,10 +1113,10 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'África/Libreville': {
+        'Africa/Libreville': {
             countryCode: "GA",
             countryName: "Gabon",
-            zoneName: "África/Libreville",
+            zoneName: "Africa/Libreville",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
@@ -1127,24 +1127,24 @@ var horariosDB = {
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'América/Grenada': {
+        'America/Grenada': {
             countryCode: "GD",
             countryName: "Grenada",
-            zoneName: "América/Grenada",
+            zoneName: "America/Grenada",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'Ásia/Tbilisi': {
+        'Asia/Tbilisi': {
             countryCode: "GE",
             countryName: "Georgia",
-            zoneName: "Ásia/Tbilisi",
+            zoneName: "Asia/Tbilisi",
             gmtOffset: "14400",
             timestamp: "1581135730"
         },
-        'América/Cayenne': {
+        'America/Cayenne': {
             countryCode: "GF",
             countryName: "French Guiana",
-            zoneName: "América/Cayenne",
+            zoneName: "America/Cayenne",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
@@ -1155,10 +1155,10 @@ var horariosDB = {
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'África/Accra': {
+        'Africa/Accra': {
             countryCode: "GH",
             countryName: "Ghana",
-            zoneName: "África/Accra",
+            zoneName: "Africa/Accra",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
@@ -1169,59 +1169,59 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'América/Danmarkshavn': {
+        'America/Danmarkshavn': {
             countryCode: "GL",
             countryName: "Greenland",
-            zoneName: "América/Danmarkshavn",
+            zoneName: "America/Danmarkshavn",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'América/Godthab': {
+        'America/Godthab': {
             countryCode: "GL",
             countryName: "Greenland",
-            zoneName: "América/Godthab",
+            zoneName: "America/Godthab",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'América/Scoresbysund': {
+        'America/Scoresbysund': {
             countryCode: "GL",
             countryName: "Greenland",
-            zoneName: "América/Scoresbysund",
+            zoneName: "America/Scoresbysund",
             gmtOffset: "-3600",
             timestamp: "1581117730"
         },
-        'América/Thule': {
+        'America/Thule': {
             countryCode: "GL",
             countryName: "Greenland",
-            zoneName: "América/Thule",
+            zoneName: "America/Thule",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'África/Banjul': {
+        'Africa/Banjul': {
             countryCode: "GM",
             countryName: "Gambia",
-            zoneName: "África/Banjul",
+            zoneName: "Africa/Banjul",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'África/Conakry': {
+        'Africa/Conakry': {
             countryCode: "GN",
             countryName: "Guinea",
-            zoneName: "África/Conakry",
+            zoneName: "Africa/Conakry",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'América/Guadeloupe': {
+        'America/Guadeloupe': {
             countryCode: "GP",
             countryName: "Guadeloupe",
-            zoneName: "América/Guadeloupe",
+            zoneName: "America/Guadeloupe",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'África/Malabo': {
+        'Africa/Malabo': {
             countryCode: "GQ",
             countryName: "Equatorial Guinea",
-            zoneName: "África/Malabo",
+            zoneName: "Africa/Malabo",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
@@ -1239,10 +1239,10 @@ var horariosDB = {
             gmtOffset: "-7200",
             timestamp: "1581114130"
         },
-        'América/Guatemala': {
+        'America/Guatemala': {
             countryCode: "GT",
             countryName: "Guatemala",
-            zoneName: "América/Guatemala",
+            zoneName: "America/Guatemala",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
@@ -1253,31 +1253,31 @@ var horariosDB = {
             gmtOffset: "36000",
             timestamp: "1581157330"
         },
-        'África/Bissau': {
+        'Africa/Bissau': {
             countryCode: "GW",
             countryName: "Guinea-Bissau",
-            zoneName: "África/Bissau",
+            zoneName: "Africa/Bissau",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'América/Guyana': {
+        'America/Guyana': {
             countryCode: "GY",
             countryName: "Guyana",
-            zoneName: "América/Guyana",
+            zoneName: "America/Guyana",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'Ásia/Hong Kong': {
+        'Asia/Hong Kong': {
             countryCode: "HK",
             countryName: "Hong Kong",
-            zoneName: "Ásia/Hong Kong",
+            zoneName: "Asia/Hong Kong",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
-        'América/Tegucigalpa': {
+        'America/Tegucigalpa': {
             countryCode: "HN",
             countryName: "Honduras",
-            zoneName: "América/Tegucigalpa",
+            zoneName: "America/Tegucigalpa",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
@@ -1288,10 +1288,10 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'América/Port-au-Prince': {
+        'America/Port-au-Prince': {
             countryCode: "HT",
             countryName: "Haiti",
-            zoneName: "América/Port-au-Prince",
+            zoneName: "America/Port-au-Prince",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
@@ -1302,31 +1302,31 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'Ásia/Jakarta': {
+        'Asia/Jakarta': {
             countryCode: "ID",
             countryName: "Indonesia",
-            zoneName: "Ásia/Jakarta",
+            zoneName: "Asia/Jakarta",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
-        'Ásia/Jayapura': {
+        'Asia/Jayapura': {
             countryCode: "ID",
             countryName: "Indonesia",
-            zoneName: "Ásia/Jayapura",
+            zoneName: "Asia/Jayapura",
             gmtOffset: "32400",
             timestamp: "1581153730"
         },
-        'Ásia/Makassar': {
+        'Asia/Makassar': {
             countryCode: "ID",
             countryName: "Indonesia",
-            zoneName: "Ásia/Makassar",
+            zoneName: "Asia/Makassar",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
-        'Ásia/Pontianak': {
+        'Asia/Pontianak': {
             countryCode: "ID",
             countryName: "Indonesia",
-            zoneName: "Ásia/Pontianak",
+            zoneName: "Asia/Pontianak",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
@@ -1337,10 +1337,10 @@ var horariosDB = {
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'Ásia/Jerusalem': {
+        'Asia/Jerusalem': {
             countryCode: "IL",
             countryName: "Israel",
-            zoneName: "Ásia/Jerusalem",
+            zoneName: "Asia/Jerusalem",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
@@ -1351,10 +1351,10 @@ var horariosDB = {
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'Ásia/Kolkata': {
+        'Asia/Kolkata': {
             countryCode: "IN",
             countryName: "India",
-            zoneName: "Ásia/Kolkata",
+            zoneName: "Asia/Kolkata",
             gmtOffset: "19800",
             timestamp: "1581141130"
         },
@@ -1365,17 +1365,17 @@ var horariosDB = {
             gmtOffset: "21600",
             timestamp: "1581142930"
         },
-        'Ásia/Baghdad': {
+        'Asia/Baghdad': {
             countryCode: "IQ",
             countryName: "Iraq",
-            zoneName: "Ásia/Baghdad",
+            zoneName: "Asia/Baghdad",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
-        'Ásia/Tehran': {
+        'Asia/Tehran': {
             countryCode: "IR",
             countryName: "Iran",
-            zoneName: "Ásia/Tehran",
+            zoneName: "Asia/Tehran",
             gmtOffset: "12600",
             timestamp: "1581133930"
         },
@@ -1400,45 +1400,45 @@ var horariosDB = {
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'América/Jamaica': {
+        'America/Jamaica': {
             countryCode: "JM",
             countryName: "Jamaica",
-            zoneName: "América/Jamaica",
+            zoneName: "America/Jamaica",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'Ásia/Amman': {
+        'Asia/Amman': {
             countryCode: "JO",
             countryName: "Jordan",
-            zoneName: "Ásia/Amman",
+            zoneName: "Asia/Amman",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'Ásia/Tokyo': {
+        'Asia/Tokyo': {
             countryCode: "JP",
             countryName: "Japan",
-            zoneName: "Ásia/Tokyo",
+            zoneName: "Asia/Tokyo",
             gmtOffset: "32400",
             timestamp: "1581153730"
         },
-        'África/Nairobi': {
+        'Africa/Nairobi': {
             countryCode: "KE",
             countryName: "Kenya",
-            zoneName: "África/Nairobi",
+            zoneName: "Africa/Nairobi",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
-        'Ásia/Bishkek': {
+        'Asia/Bishkek': {
             countryCode: "KG",
             countryName: "Kyrgyzstan",
-            zoneName: "Ásia/Bishkek",
+            zoneName: "Asia/Bishkek",
             gmtOffset: "21600",
             timestamp: "1581142930"
         },
-        'Ásia/Phnom Penh': {
+        'Asia/Phnom Penh': {
             countryCode: "KH",
             countryName: "Cambodia",
-            zoneName: "Ásia/Phnom Penh",
+            zoneName: "Asia/Phnom Penh",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
@@ -1470,108 +1470,108 @@ var horariosDB = {
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
-        'América/St Kitts': {
+        'America/St Kitts': {
             countryCode: "KN",
             countryName: "Saint Kitts and Nevis",
-            zoneName: "América/St Kitts",
+            zoneName: "America/St Kitts",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'Ásia/Pyongyang': {
+        'Asia/Pyongyang': {
             countryCode: "KP",
             countryName: "North Korea",
-            zoneName: "Ásia/Pyongyang",
+            zoneName: "Asia/Pyongyang",
             gmtOffset: "32400",
             timestamp: "1581153730"
         },
-        'Ásia/Seoul': {
+        'Asia/Seoul': {
             countryCode: "KR",
             countryName: "South Korea",
-            zoneName: "Ásia/Seoul",
+            zoneName: "Asia/Seoul",
             gmtOffset: "32400",
             timestamp: "1581153730"
         },
-        'Ásia/Kuwait': {
+        'Asia/Kuwait': {
             countryCode: "KW",
             countryName: "Kuwait",
-            zoneName: "Ásia/Kuwait",
+            zoneName: "Asia/Kuwait",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
-        'América/Cayman': {
+        'America/Cayman': {
             countryCode: "KY",
             countryName: "Cayman Islands",
-            zoneName: "América/Cayman",
+            zoneName: "America/Cayman",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'Ásia/Almaty': {
+        'Asia/Almaty': {
             countryCode: "KZ",
             countryName: "Kazakhstan",
-            zoneName: "Ásia/Almaty",
+            zoneName: "Asia/Almaty",
             gmtOffset: "21600",
             timestamp: "1581142930"
         },
-        'Ásia/Aqtau': {
+        'Asia/Aqtau': {
             countryCode: "KZ",
             countryName: "Kazakhstan",
-            zoneName: "Ásia/Aqtau",
+            zoneName: "Asia/Aqtau",
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
-        'Ásia/Aqtobe': {
+        'Asia/Aqtobe': {
             countryCode: "KZ",
             countryName: "Kazakhstan",
-            zoneName: "Ásia/Aqtobe",
+            zoneName: "Asia/Aqtobe",
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
-        'Ásia/Atyrau': {
+        'Asia/Atyrau': {
             countryCode: "KZ",
             countryName: "Kazakhstan",
-            zoneName: "Ásia/Atyrau",
+            zoneName: "Asia/Atyrau",
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
-        'Ásia/Oral': {
+        'Asia/Oral': {
             countryCode: "KZ",
             countryName: "Kazakhstan",
-            zoneName: "Ásia/Oral",
+            zoneName: "Asia/Oral",
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
-        'Ásia/Qostanay': {
+        'Asia/Qostanay': {
             countryCode: "KZ",
             countryName: "Kazakhstan",
-            zoneName: "Ásia/Qostanay",
+            zoneName: "Asia/Qostanay",
             gmtOffset: "21600",
             timestamp: "1581142930"
         },
-        'Ásia/Qyzylorda': {
+        'Asia/Qyzylorda': {
             countryCode: "KZ",
             countryName: "Kazakhstan",
-            zoneName: "Ásia/Qyzylorda",
+            zoneName: "Asia/Qyzylorda",
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
-        'Ásia/Vientiane': {
+        'Asia/Vientiane': {
             countryCode: "LA",
             countryName: "Laos",
-            zoneName: "Ásia/Vientiane",
+            zoneName: "Asia/Vientiane",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
-        'Ásia/Beirut': {
+        'Asia/Beirut': {
             countryCode: "LB",
             countryName: "Lebanon",
-            zoneName: "Ásia/Beirut",
+            zoneName: "Asia/Beirut",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'América/St Lucia': {
+        'America/St Lucia': {
             countryCode: "LC",
             countryName: "Saint Lucia",
-            zoneName: "América/St Lucia",
+            zoneName: "America/St Lucia",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
@@ -1582,24 +1582,24 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'Ásia/Colombo': {
+        'Asia/Colombo': {
             countryCode: "LK",
             countryName: "Sri Lanka",
-            zoneName: "Ásia/Colombo",
+            zoneName: "Asia/Colombo",
             gmtOffset: "19800",
             timestamp: "1581141130"
         },
-        'África/Monrovia': {
+        'Africa/Monrovia': {
             countryCode: "LR",
             countryName: "Liberia",
-            zoneName: "África/Monrovia",
+            zoneName: "Africa/Monrovia",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'África/Maseru': {
+        'Africa/Maseru': {
             countryCode: "LS",
             countryName: "Lesotho",
-            zoneName: "África/Maseru",
+            zoneName: "Africa/Maseru",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
@@ -1624,17 +1624,17 @@ var horariosDB = {
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'África/Tripoli': {
+        'Africa/Tripoli': {
             countryCode: "LY",
             countryName: "Libya",
-            zoneName: "África/Tripoli",
+            zoneName: "Africa/Tripoli",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'África/Casablanca': {
+        'Africa/Casablanca': {
             countryCode: "MA",
             countryName: "Morocco",
-            zoneName: "África/Casablanca",
+            zoneName: "Africa/Casablanca",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
@@ -1659,10 +1659,10 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'América/Marigot': {
+        'America/Marigot': {
             countryCode: "MF",
             countryName: "Saint Martin",
-            zoneName: "América/Marigot",
+            zoneName: "America/Marigot",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
@@ -1694,45 +1694,45 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'África/Bamako': {
+        'Africa/Bamako': {
             countryCode: "ML",
             countryName: "Mali",
-            zoneName: "África/Bamako",
+            zoneName: "Africa/Bamako",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'Ásia/Yangon': {
+        'Asia/Yangon': {
             countryCode: "MM",
             countryName: "Myanmar",
-            zoneName: "Ásia/Yangon",
+            zoneName: "Asia/Yangon",
             gmtOffset: "23400",
             timestamp: "1581144730"
         },
-        'Ásia/Choibalsan': {
+        'Asia/Choibalsan': {
             countryCode: "MN",
             countryName: "Mongolia",
-            zoneName: "Ásia/Choibalsan",
+            zoneName: "Asia/Choibalsan",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
-        'Ásia/Hovd': {
+        'Asia/Hovd': {
             countryCode: "MN",
             countryName: "Mongolia",
-            zoneName: "Ásia/Hovd",
+            zoneName: "Asia/Hovd",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
-        'Ásia/Ulaanbaatar': {
+        'Asia/Ulaanbaatar': {
             countryCode: "MN",
             countryName: "Mongolia",
-            zoneName: "Ásia/Ulaanbaatar",
+            zoneName: "Asia/Ulaanbaatar",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
-        'Ásia/Macau': {
+        'Asia/Macau': {
             countryCode: "MO",
             countryName: "Macao",
-            zoneName: "Ásia/Macau",
+            zoneName: "Asia/Macau",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
@@ -1743,24 +1743,24 @@ var horariosDB = {
             gmtOffset: "36000",
             timestamp: "1581157330"
         },
-        'América/Martinique': {
+        'America/Martinique': {
             countryCode: "MQ",
             countryName: "Martinique",
-            zoneName: "América/Martinique",
+            zoneName: "America/Martinique",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'África/Nouakchott': {
+        'Africa/Nouakchott': {
             countryCode: "MR",
             countryName: "Mauritania",
-            zoneName: "África/Nouakchott",
+            zoneName: "Africa/Nouakchott",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'América/Montserrat': {
+        'America/Montserrat': {
             countryCode: "MS",
             countryName: "Montserrat",
-            zoneName: "América/Montserrat",
+            zoneName: "America/Montserrat",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
@@ -1785,115 +1785,115 @@ var horariosDB = {
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
-        'África/Blantyre': {
+        'Africa/Blantyre': {
             countryCode: "MW",
             countryName: "Malawi",
-            zoneName: "África/Blantyre",
+            zoneName: "Africa/Blantyre",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'América/Bahia Banderas': {
+        'America/Bahia Banderas': {
             countryCode: "MX",
             countryName: "Mexico",
-            zoneName: "América/Bahia Banderas",
+            zoneName: "America/Bahia Banderas",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Cancun': {
+        'America/Cancun': {
             countryCode: "MX",
             countryName: "Mexico",
-            zoneName: "América/Cancun",
+            zoneName: "America/Cancun",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Chihuahua': {
+        'America/Chihuahua': {
             countryCode: "MX",
             countryName: "Mexico",
-            zoneName: "América/Chihuahua",
+            zoneName: "America/Chihuahua",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Hermosillo': {
+        'America/Hermosillo': {
             countryCode: "MX",
             countryName: "Mexico",
-            zoneName: "América/Hermosillo",
+            zoneName: "America/Hermosillo",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Matamoros': {
+        'America/Matamoros': {
             countryCode: "MX",
             countryName: "Mexico",
-            zoneName: "América/Matamoros",
+            zoneName: "America/Matamoros",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Mazatlan': {
+        'America/Mazatlan': {
             countryCode: "MX",
             countryName: "Mexico",
-            zoneName: "América/Mazatlan",
+            zoneName: "America/Mazatlan",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Merida': {
+        'America/Merida': {
             countryCode: "MX",
             countryName: "Mexico",
-            zoneName: "América/Merida",
+            zoneName: "America/Merida",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Mexico City': {
+        'America/Mexico City': {
             countryCode: "MX",
             countryName: "Mexico",
-            zoneName: "América/Mexico City",
+            zoneName: "America/Mexico City",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Monterrey': {
+        'America/Monterrey': {
             countryCode: "MX",
             countryName: "Mexico",
-            zoneName: "América/Monterrey",
+            zoneName: "America/Monterrey",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Ojinaga': {
+        'America/Ojinaga': {
             countryCode: "MX",
             countryName: "Mexico",
-            zoneName: "América/Ojinaga",
+            zoneName: "America/Ojinaga",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Tijuana': {
+        'America/Tijuana': {
             countryCode: "MX",
             countryName: "Mexico",
-            zoneName: "América/Tijuana",
+            zoneName: "America/Tijuana",
             gmtOffset: "-28800",
             timestamp: "1581092530"
         },
-        'Ásia/Kuala Lumpur': {
+        'Asia/Kuala Lumpur': {
             countryCode: "MY",
             countryName: "Malaysia",
-            zoneName: "Ásia/Kuala Lumpur",
+            zoneName: "Asia/Kuala Lumpur",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
-        'Ásia/Kuching': {
+        'Asia/Kuching': {
             countryCode: "MY",
             countryName: "Malaysia",
-            zoneName: "Ásia/Kuching",
+            zoneName: "Asia/Kuching",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
-        'África/Maputo': {
+        'Africa/Maputo': {
             countryCode: "MZ",
             countryName: "Mozambique",
-            zoneName: "África/Maputo",
+            zoneName: "Africa/Maputo",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'África/Windhoek': {
+        'Africa/Windhoek': {
             countryCode: "NA",
             countryName: "Namibia",
-            zoneName: "África/Windhoek",
+            zoneName: "Africa/Windhoek",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
@@ -1904,10 +1904,10 @@ var horariosDB = {
             gmtOffset: "39600",
             timestamp: "1581160930"
         },
-        'África/Niamey': {
+        'Africa/Niamey': {
             countryCode: "NE",
             countryName: "Niger",
-            zoneName: "África/Niamey",
+            zoneName: "Africa/Niamey",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
@@ -1918,17 +1918,17 @@ var horariosDB = {
             gmtOffset: "43200",
             timestamp: "1581164530"
         },
-        'África/Lagos': {
+        'Africa/Lagos': {
             countryCode: "NG",
             countryName: "Nigeria",
-            zoneName: "África/Lagos",
+            zoneName: "Africa/Lagos",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'América/Managua': {
+        'America/Managua': {
             countryCode: "NI",
             countryName: "Nicaragua",
-            zoneName: "América/Managua",
+            zoneName: "America/Managua",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
@@ -1946,10 +1946,10 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'Ásia/Kathmandu': {
+        'Asia/Kathmandu': {
             countryCode: "NP",
             countryName: "Nepal",
-            zoneName: "Ásia/Kathmandu",
+            zoneName: "Asia/Kathmandu",
             gmtOffset: "20700",
             timestamp: "1581142030"
         },
@@ -1981,24 +1981,24 @@ var horariosDB = {
             gmtOffset: "49500",
             timestamp: "1581170830"
         },
-        'Ásia/Muscat': {
+        'Asia/Muscat': {
             countryCode: "OM",
             countryName: "Oman",
-            zoneName: "Ásia/Muscat",
+            zoneName: "Asia/Muscat",
             gmtOffset: "14400",
             timestamp: "1581135730"
         },
-        'América/Panama': {
+        'America/Panama': {
             countryCode: "PA",
             countryName: "Panama",
-            zoneName: "América/Panama",
+            zoneName: "America/Panama",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Lima': {
+        'America/Lima': {
             countryCode: "PE",
             countryName: "Peru",
-            zoneName: "América/Lima",
+            zoneName: "America/Lima",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
@@ -2037,17 +2037,17 @@ var horariosDB = {
             gmtOffset: "36000",
             timestamp: "1581157330"
         },
-        'Ásia/Manila': {
+        'Asia/Manila': {
             countryCode: "PH",
             countryName: "Philippines",
-            zoneName: "Ásia/Manila",
+            zoneName: "Asia/Manila",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
-        'Ásia/Karachi': {
+        'Asia/Karachi': {
             countryCode: "PK",
             countryName: "Pakistan",
-            zoneName: "Ásia/Karachi",
+            zoneName: "Asia/Karachi",
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
@@ -2058,10 +2058,10 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'América/Miquelon': {
+        'America/Miquelon': {
             countryCode: "PM",
             countryName: "Saint Pierre and Miquelon",
-            zoneName: "América/Miquelon",
+            zoneName: "America/Miquelon",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
@@ -2072,24 +2072,24 @@ var horariosDB = {
             gmtOffset: "-28800",
             timestamp: "1581092530"
         },
-        'América/Puerto Rico': {
+        'America/Puerto Rico': {
             countryCode: "PR",
             countryName: "Puerto Rico",
-            zoneName: "América/Puerto Rico",
+            zoneName: "America/Puerto Rico",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'Ásia/Gaza': {
+        'Asia/Gaza': {
             countryCode: "PS",
             countryName: "Palestinian Territory",
-            zoneName: "Ásia/Gaza",
+            zoneName: "Asia/Gaza",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'Ásia/Hebron': {
+        'Asia/Hebron': {
             countryCode: "PS",
             countryName: "Palestinian Territory",
-            zoneName: "Ásia/Hebron",
+            zoneName: "Asia/Hebron",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
@@ -2121,17 +2121,17 @@ var horariosDB = {
             gmtOffset: "32400",
             timestamp: "1581153730"
         },
-        'América/Asuncion': {
+        'America/Asuncion': {
             countryCode: "PY",
             countryName: "Paraguay",
-            zoneName: "América/Asuncion",
+            zoneName: "America/Asuncion",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'Ásia/Qatar': {
+        'Asia/Qatar': {
             countryCode: "QA",
             countryName: "Qatar",
-            zoneName: "Ásia/Qatar",
+            zoneName: "Asia/Qatar",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
@@ -2156,129 +2156,129 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'Ásia/Anadyr': {
+        'Asia/Anadyr': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Anadyr",
+            zoneName: "Asia/Anadyr",
             gmtOffset: "43200",
             timestamp: "1581164530"
         },
-        'Ásia/Barnaul': {
+        'Asia/Barnaul': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Barnaul",
+            zoneName: "Asia/Barnaul",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
-        'Ásia/Chita': {
+        'Asia/Chita': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Chita",
+            zoneName: "Asia/Chita",
             gmtOffset: "32400",
             timestamp: "1581153730"
         },
-        'Ásia/Irkutsk': {
+        'Asia/Irkutsk': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Irkutsk",
+            zoneName: "Asia/Irkutsk",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
-        'Ásia/Kamchatka': {
+        'Asia/Kamchatka': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Kamchatka",
+            zoneName: "Asia/Kamchatka",
             gmtOffset: "43200",
             timestamp: "1581164530"
         },
-        'Ásia/Khandyga': {
+        'Asia/Khandyga': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Khandyga",
+            zoneName: "Asia/Khandyga",
             gmtOffset: "32400",
             timestamp: "1581153730"
         },
-        'Ásia/Krasnoyarsk': {
+        'Asia/Krasnoyarsk': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Krasnoyarsk",
+            zoneName: "Asia/Krasnoyarsk",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
-        'Ásia/Magadan': {
+        'Asia/Magadan': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Magadan",
+            zoneName: "Asia/Magadan",
             gmtOffset: "39600",
             timestamp: "1581160930"
         },
-        'Ásia/Novokuznetsk': {
+        'Asia/Novokuznetsk': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Novokuznetsk",
+            zoneName: "Asia/Novokuznetsk",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
-        'Ásia/Novosibirsk': {
+        'Asia/Novosibirsk': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Novosibirsk",
+            zoneName: "Asia/Novosibirsk",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
-        'Ásia/Omsk': {
+        'Asia/Omsk': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Omsk",
+            zoneName: "Asia/Omsk",
             gmtOffset: "21600",
             timestamp: "1581142930"
         },
-        'Ásia/Sakhalin': {
+        'Asia/Sakhalin': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Sakhalin",
+            zoneName: "Asia/Sakhalin",
             gmtOffset: "39600",
             timestamp: "1581160930"
         },
-        'Ásia/Srednekolymsk': {
+        'Asia/Srednekolymsk': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Srednekolymsk",
+            zoneName: "Asia/Srednekolymsk",
             gmtOffset: "39600",
             timestamp: "1581160930"
         },
-        'Ásia/Tomsk': {
+        'Asia/Tomsk': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Tomsk",
+            zoneName: "Asia/Tomsk",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
-        'Ásia/Ust-Nera': {
+        'Asia/Ust-Nera': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Ust-Nera",
+            zoneName: "Asia/Ust-Nera",
             gmtOffset: "36000",
             timestamp: "1581157330"
         },
-        'Ásia/Vladivostok': {
+        'Asia/Vladivostok': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Vladivostok",
+            zoneName: "Asia/Vladivostok",
             gmtOffset: "36000",
             timestamp: "1581157330"
         },
-        'Ásia/Yakutsk': {
+        'Asia/Yakutsk': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Yakutsk",
+            zoneName: "Asia/Yakutsk",
             gmtOffset: "32400",
             timestamp: "1581153730"
         },
-        'Ásia/Yekaterinburg': {
+        'Asia/Yekaterinburg': {
             countryCode: "RU",
             countryName: "Russia",
-            zoneName: "Ásia/Yekaterinburg",
+            zoneName: "Asia/Yekaterinburg",
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
@@ -2338,17 +2338,17 @@ var horariosDB = {
             gmtOffset: "14400",
             timestamp: "1581135730"
         },
-        'África/Kigali': {
+        'Africa/Kigali': {
             countryCode: "RW",
             countryName: "Rwanda",
-            zoneName: "África/Kigali",
+            zoneName: "Africa/Kigali",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'Ásia/Riyadh': {
+        'Asia/Riyadh': {
             countryCode: "SA",
             countryName: "Saudi Arabia",
-            zoneName: "Ásia/Riyadh",
+            zoneName: "Asia/Riyadh",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
@@ -2366,10 +2366,10 @@ var horariosDB = {
             gmtOffset: "14400",
             timestamp: "1581135730"
         },
-        'África/Khartoum': {
+        'Africa/Khartoum': {
             countryCode: "SD",
             countryName: "Sudan",
-            zoneName: "África/Khartoum",
+            zoneName: "Africa/Khartoum",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
@@ -2380,10 +2380,10 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'Ásia/Singapore': {
+        'Asia/Singapore': {
             countryCode: "SG",
             countryName: "Singapore",
-            zoneName: "Ásia/Singapore",
+            zoneName: "Asia/Singapore",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
@@ -2415,10 +2415,10 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'África/Freetown': {
+        'Africa/Freetown': {
             countryCode: "SL",
             countryName: "Sierra Leone",
-            zoneName: "África/Freetown",
+            zoneName: "Africa/Freetown",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
@@ -2429,80 +2429,80 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'África/Dakar': {
+        'Africa/Dakar': {
             countryCode: "SN",
             countryName: "Senegal",
-            zoneName: "África/Dakar",
+            zoneName: "Africa/Dakar",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'África/Mogadishu': {
+        'Africa/Mogadishu': {
             countryCode: "SO",
             countryName: "Somalia",
-            zoneName: "África/Mogadishu",
+            zoneName: "Africa/Mogadishu",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
-        'América/Paramaribo': {
+        'America/Paramaribo': {
             countryCode: "SR",
             countryName: "Suriname",
-            zoneName: "América/Paramaribo",
+            zoneName: "America/Paramaribo",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'África/Juba': {
+        'Africa/Juba': {
             countryCode: "SS",
             countryName: "South Sudan",
-            zoneName: "África/Juba",
+            zoneName: "Africa/Juba",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
-        'África/Sao Tome': {
+        'Africa/Sao Tome': {
             countryCode: "ST",
             countryName: "Sao Tome and Principe",
-            zoneName: "África/Sao Tome",
+            zoneName: "Africa/Sao Tome",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'América/El Salvador': {
+        'America/El Salvador': {
             countryCode: "SV",
             countryName: "El Salvador",
-            zoneName: "América/El Salvador",
+            zoneName: "America/El Salvador",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Lower Princes': {
+        'America/Lower Princes': {
             countryCode: "SX",
             countryName: "Sint Maarten",
-            zoneName: "América/Lower Princes",
+            zoneName: "America/Lower Princes",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'Ásia/Damascus': {
+        'Asia/Damascus': {
             countryCode: "SY",
             countryName: "Syria",
-            zoneName: "Ásia/Damascus",
+            zoneName: "Asia/Damascus",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'África/Mbabane': {
+        'Africa/Mbabane': {
             countryCode: "SZ",
             countryName: "Swaziland",
-            zoneName: "África/Mbabane",
+            zoneName: "Africa/Mbabane",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'América/Grand Turk': {
+        'America/Grand Turk': {
             countryCode: "TC",
             countryName: "Turks and Caicos Islands",
-            zoneName: "América/Grand Turk",
+            zoneName: "America/Grand Turk",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'África/Ndjamena': {
+        'Africa/Ndjamena': {
             countryCode: "TD",
             countryName: "Chad",
-            zoneName: "África/Ndjamena",
+            zoneName: "Africa/Ndjamena",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
@@ -2513,24 +2513,24 @@ var horariosDB = {
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
-        'África/Lome': {
+        'Africa/Lome': {
             countryCode: "TG",
             countryName: "Togo",
-            zoneName: "África/Lome",
+            zoneName: "Africa/Lome",
             gmtOffset: "0",
             timestamp: "1581121330"
         },
-        'Ásia/Bangkok': {
+        'Asia/Bangkok': {
             countryCode: "TH",
             countryName: "Thailand",
-            zoneName: "Ásia/Bangkok",
+            zoneName: "Asia/Bangkok",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
-        'Ásia/Dushanbe': {
+        'Asia/Dushanbe': {
             countryCode: "TJ",
             countryName: "Tajikistan",
-            zoneName: "Ásia/Dushanbe",
+            zoneName: "Asia/Dushanbe",
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
@@ -2541,24 +2541,24 @@ var horariosDB = {
             gmtOffset: "46800",
             timestamp: "1581168130"
         },
-        'Ásia/Dili': {
+        'Asia/Dili': {
             countryCode: "TL",
             countryName: "East Timor",
-            zoneName: "Ásia/Dili",
+            zoneName: "Asia/Dili",
             gmtOffset: "32400",
             timestamp: "1581153730"
         },
-        'Ásia/Ashgabat': {
+        'Asia/Ashgabat': {
             countryCode: "TM",
             countryName: "Turkmenistan",
-            zoneName: "Ásia/Ashgabat",
+            zoneName: "Asia/Ashgabat",
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
-        'África/Tunis': {
+        'Africa/Tunis': {
             countryCode: "TN",
             countryName: "Tunisia",
-            zoneName: "África/Tunis",
+            zoneName: "Africa/Tunis",
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
@@ -2576,10 +2576,10 @@ var horariosDB = {
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
-        'América/Port of Spain': {
+        'America/Port of Spain': {
             countryCode: "TT",
             countryName: "Trinidad and Tobago",
-            zoneName: "América/Port of Spain",
+            zoneName: "America/Port of Spain",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
@@ -2590,17 +2590,17 @@ var horariosDB = {
             gmtOffset: "43200",
             timestamp: "1581164530"
         },
-        'Ásia/Taipei': {
+        'Asia/Taipei': {
             countryCode: "TW",
             countryName: "Taiwan",
-            zoneName: "Ásia/Taipei",
+            zoneName: "Asia/Taipei",
             gmtOffset: "28800",
             timestamp: "1581150130"
         },
-        'África/Dar es Salaam': {
+        'Africa/Dar es Salaam': {
             countryCode: "TZ",
             countryName: "Tanzania",
-            zoneName: "África/Dar es Salaam",
+            zoneName: "Africa/Dar es Salaam",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
@@ -2632,10 +2632,10 @@ var horariosDB = {
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'África/Kampala': {
+        'Africa/Kampala': {
             countryCode: "UG",
             countryName: "Uganda",
-            zoneName: "África/Kampala",
+            zoneName: "Africa/Kampala",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
@@ -2653,199 +2653,199 @@ var horariosDB = {
             gmtOffset: "43200",
             timestamp: "1581164530"
         },
-        'América/Adak': {
+        'America/Adak': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Adak",
+            zoneName: "America/Adak",
             gmtOffset: "-36000",
             timestamp: "1581085330"
         },
-        'América/Anchorage': {
+        'America/Anchorage': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Anchorage",
+            zoneName: "America/Anchorage",
             gmtOffset: "-32400",
             timestamp: "1581088930"
         },
-        'América/Boise': {
+        'America/Boise': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Boise",
+            zoneName: "America/Boise",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Chicago': {
+        'America/Chicago': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Chicago",
+            zoneName: "America/Chicago",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Denver': {
+        'America/Denver': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Denver",
+            zoneName: "America/Denver",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Detroit': {
+        'America/Detroit': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Detroit",
+            zoneName: "America/Detroit",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Indiana/Indianapolis': {
+        'America/Indiana/Indianapolis': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Indiana/Indianapolis",
+            zoneName: "America/Indiana/Indianapolis",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Indiana/Knox': {
+        'America/Indiana/Knox': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Indiana/Knox",
+            zoneName: "America/Indiana/Knox",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Indiana/Marengo': {
+        'America/Indiana/Marengo': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Indiana/Marengo",
+            zoneName: "America/Indiana/Marengo",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Indiana/Petersburg': {
+        'America/Indiana/Petersburg': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Indiana/Petersburg",
+            zoneName: "America/Indiana/Petersburg",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Indiana/Tell City': {
+        'America/Indiana/Tell City': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Indiana/Tell City",
+            zoneName: "America/Indiana/Tell City",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Indiana/Vevay': {
+        'America/Indiana/Vevay': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Indiana/Vevay",
+            zoneName: "America/Indiana/Vevay",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Indiana/Vincennes': {
+        'America/Indiana/Vincennes': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Indiana/Vincennes",
+            zoneName: "America/Indiana/Vincennes",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Indiana/Winamac': {
+        'America/Indiana/Winamac': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Indiana/Winamac",
+            zoneName: "America/Indiana/Winamac",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Juneau': {
+        'America/Juneau': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Juneau",
+            zoneName: "America/Juneau",
             gmtOffset: "-32400",
             timestamp: "1581088930"
         },
-        'América/Kentucky/Louisville': {
+        'America/Kentucky/Louisville': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Kentucky/Louisville",
+            zoneName: "America/Kentucky/Louisville",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Kentucky/Monticello': {
+        'America/Kentucky/Monticello': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Kentucky/Monticello",
+            zoneName: "America/Kentucky/Monticello",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Los Angeles': {
+        'America/Los Angeles': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Los Angeles",
+            zoneName: "America/Los Angeles",
             gmtOffset: "-28800",
             timestamp: "1581092530"
         },
-        'América/Menominee': {
+        'America/Menominee': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Menominee",
+            zoneName: "America/Menominee",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Metlakatla': {
+        'America/Metlakatla': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Metlakatla",
+            zoneName: "America/Metlakatla",
             gmtOffset: "-32400",
             timestamp: "1581088930"
         },
-        'América/New York': {
+        'America/New York': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/New York",
+            zoneName: "America/New York",
             gmtOffset: "-18000",
             timestamp: "1581103330"
         },
-        'América/Nome': {
+        'America/Nome': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Nome",
+            zoneName: "America/Nome",
             gmtOffset: "-32400",
             timestamp: "1581088930"
         },
-        'América/North Dakota/Beulah': {
+        'America/North Dakota/Beulah': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/North Dakota/Beulah",
+            zoneName: "America/North Dakota/Beulah",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/North Dakota/Center': {
+        'America/North Dakota/Center': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/North Dakota/Center",
+            zoneName: "America/North Dakota/Center",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/North Dakota/New Salem': {
+        'America/North Dakota/New Salem': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/North Dakota/New Salem",
+            zoneName: "America/North Dakota/New Salem",
             gmtOffset: "-21600",
             timestamp: "1581099730"
         },
-        'América/Phoenix': {
+        'America/Phoenix': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Phoenix",
+            zoneName: "America/Phoenix",
             gmtOffset: "-25200",
             timestamp: "1581096130"
         },
-        'América/Sitka': {
+        'America/Sitka': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Sitka",
+            zoneName: "America/Sitka",
             gmtOffset: "-32400",
             timestamp: "1581088930"
         },
-        'América/Yakutat': {
+        'America/Yakutat': {
             countryCode: "US",
             countryName: "United States",
-            zoneName: "América/Yakutat",
+            zoneName: "America/Yakutat",
             gmtOffset: "-32400",
             timestamp: "1581088930"
         },
@@ -2856,24 +2856,24 @@ var horariosDB = {
             gmtOffset: "-36000",
             timestamp: "1581085330"
         },
-        'América/Montevideo': {
+        'America/Montevideo': {
             countryCode: "UY",
             countryName: "Uruguay",
-            zoneName: "América/Montevideo",
+            zoneName: "America/Montevideo",
             gmtOffset: "-10800",
             timestamp: "1581110530"
         },
-        'Ásia/Samarkand': {
+        'Asia/Samarkand': {
             countryCode: "UZ",
             countryName: "Uzbekistan",
-            zoneName: "Ásia/Samarkand",
+            zoneName: "Asia/Samarkand",
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
-        'Ásia/Tashkent': {
+        'Asia/Tashkent': {
             countryCode: "UZ",
             countryName: "Uzbekistan",
-            zoneName: "Ásia/Tashkent",
+            zoneName: "Asia/Tashkent",
             gmtOffset: "18000",
             timestamp: "1581139330"
         },
@@ -2884,38 +2884,38 @@ var horariosDB = {
             gmtOffset: "3600",
             timestamp: "1581124930"
         },
-        'América/St Vincent': {
+        'America/St Vincent': {
             countryCode: "VC",
             countryName: "Saint Vincent and the Grenadines",
-            zoneName: "América/St Vincent",
+            zoneName: "America/St Vincent",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Caracas': {
+        'America/Caracas': {
             countryCode: "VE",
             countryName: "Venezuela",
-            zoneName: "América/Caracas",
+            zoneName: "America/Caracas",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/Tortola': {
+        'America/Tortola': {
             countryCode: "VG",
             countryName: "British Virgin Islands",
-            zoneName: "América/Tortola",
+            zoneName: "America/Tortola",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'América/St Thomas': {
+        'America/St Thomas': {
             countryCode: "VI",
             countryName: "U.S. Virgin Islands",
-            zoneName: "América/St Thomas",
+            zoneName: "America/St Thomas",
             gmtOffset: "-14400",
             timestamp: "1581106930"
         },
-        'Ásia/Ho Chi Minh': {
+        'Asia/Ho Chi Minh': {
             countryCode: "VN",
             countryName: "Vietnam",
-            zoneName: "Ásia/Ho Chi Minh",
+            zoneName: "Asia/Ho Chi Minh",
             gmtOffset: "25200",
             timestamp: "1581146530"
         },
@@ -2940,10 +2940,10 @@ var horariosDB = {
             gmtOffset: "50400",
             timestamp: "1581171730"
         },
-        'Ásia/Aden': {
+        'Asia/Aden': {
             countryCode: "YE",
             countryName: "Yemen",
-            zoneName: "Ásia/Aden",
+            zoneName: "Asia/Aden",
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
@@ -2954,24 +2954,24 @@ var horariosDB = {
             gmtOffset: "10800",
             timestamp: "1581132130"
         },
-        'África/Johannesburg': {
+        'Africa/Johannesburg': {
             countryCode: "ZA",
-            countryName: "South África",
-            zoneName: "África/Johannesburg",
+            countryName: "South Africa",
+            zoneName: "Africa/Johannesburg",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'África/Lusaka': {
+        'Africa/Lusaka': {
             countryCode: "ZM",
             countryName: "Zambia",
-            zoneName: "África/Lusaka",
+            zoneName: "Africa/Lusaka",
             gmtOffset: "7200",
             timestamp: "1581128530"
         },
-        'África/Harare': {
+        'Africa/Harare': {
             countryCode: "ZW",
             countryName: "Zimbabwe",
-            zoneName: "África/Harare",
+            zoneName: "Africa/Harare",
             gmtOffset: "7200",
             timestamp: "1581128530"
         }

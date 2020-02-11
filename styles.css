@@ -1,3 +1,7 @@
+html {
+    user-select: none;
+}
+
 a {
     text-decoration: none;
     color: #000;
@@ -44,13 +48,36 @@ img {
 }
 
 .time {
-    text-align: center;
+    /* text-align: center; */
     align-items: center;
+    width: 30vw;
+    /* padding-top: 20vh; */
+}
+
+.timePrincipal {
+    display: inline-flex !important;
+    place-content: center;
     /* padding-top: 20vh; */
 }
 
 .row {
     width: 100vw;
+}
+
+.bandeiraPrincipal {
+    padding-top: 0px;
+    margin-right: 15px;
+    /* margin-top: 35px; */
+}
+
+.bandeira {
+    padding-top: 0px;
+    margin-right: 15px;
+    /* margin-top: 35px; */
+}
+
+.contBand {
+    display: inline-flex !important;
 }
 
 @media (max-width: 700px) {
@@ -70,12 +97,23 @@ img {
         font-size: 3.25vw;
     }
     .dataPrincipal {
-        font-size: 6vw;
+        font-size: 3.5vw;
+        top: -5vw;
+        position: relative;
+        text-align: left;
     }
     .row {
         margin-right: 0 !important;
         margin-left: 0 !important;
         width: 100vw;
+    }
+    .bandeiraPrincipal {
+        height: 20vw;
+        width: 20vw;
+    }
+    .bandeira {
+        height: 20vw;
+        width: 20vw;
     }
 }
 
@@ -100,7 +138,18 @@ img {
         font-size: 2.5vw;
     }
     .dataPrincipal {
-        font-size: 4vw;
+        font-size: 2.6vw;
+        top: -4vw;
+        position: relative;
+        text-align: left;
+    }
+    .bandeiraPrincipal {
+        height: 15vw;
+        width: 15vw;
+    }
+    .bandeira {
+        height: 15vw;
+        width: 15vw;
     }
 }
 
@@ -109,6 +158,8 @@ img {
         height: 30vh;
         width: 33vw;
         font-size: 5vw;
+        display: inline-flex;
+        padding-left: 2vw;
         /* display: inline-block; */
     }
     .timePrincipal {
@@ -119,9 +170,21 @@ img {
     }
     .data {
         font-size: 1.5vw;
+        position: relative;
+        top: -1.5vw;
     }
     .dataPrincipal {
-        font-size: 3vw;
+        font-size: 2.2vw;
+        top: -3vw;
+        position: relative;
+    }
+    .bandeiraPrincipal {
+        height: 12vw;
+        width: 12vw;
+    }
+    .bandeira {
+        height: 8vw;
+        width: 8vw;
     }
 }
 
@@ -137,9 +200,19 @@ img {
         font-size: 10vw;
     }
     .data {
-        font-size: 1.5vw;
+        font-size: 1.4vw;
     }
     .dataPrincipal {
-        font-size: 3vw;
+        font-size: 2.2vw;
+        top: -3vw;
+        position: relative;
+    }
+    .bandeiraPrincipal {
+        height: 10vw;
+        width: 10vw;
+    }
+    .bandeira {
+        height: 7vw;
+        width: 7vw;
     }
 }

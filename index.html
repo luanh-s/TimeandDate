@@ -16,23 +16,26 @@
 <body>
     <!-- <button type="button" class="btn btn-primary">Primary</button> -->
     <div class="row" style="margin-right: 0;margin-left: 0;">
-        <div id="time" class="time timePrincipal"> </div>
+        <!-- <div id="bandeira" class="bandeira"></div> -->
+        <div id="time0" class="time timePrincipal"></div>
     </div>
     <div class="row" style="margin-right: 0;margin-left: 0;">
+        <div id="time1" class="time"> </div>
         <div id="time2" class="time"> </div>
         <div id="time3" class="time"> </div>
         <div id="time4" class="time"> </div>
         <div id="time5" class="time"> </div>
         <div id="time6" class="time"> </div>
-        <div id="time7" class="time"> </div>
     </div>
     <script src="zones.js"></script>
     <script src="cidades.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script type="text/javascript">
         // VARIAVEIS INICIAIS DO CÓDIGO.
-        var cidades = ["Vitória", "São Paulo", "New York", "Washington DC", "Tokyo", "Berlin", "Beijing"];
+        // var cidades = ["Vitória", "São Paulo", "New York", "Washington DC", "Tokyo", "Berlin", "Beijing"];
+        var cidades = ["America/Sao Paulo", "America/New York", "Asia/Tokyo", "Europa/Paris", "Europa/Berlin", "Asia/Shanghai", "Australia/Sydney"];
         var gmtdifference = []; //[8.5, 1, 5, 4, 9, 8, -3]
+        var paises = [];
         var inicial;
 
         // ADICIONA UM NOVO PROTOTYPE PARA DATE, ONDE É POSSIVEL ADICIONAR HORAS DIRETAMENTE NA NEW DATE;
@@ -50,7 +53,15 @@
         function getAddHours(cidades) {
             gmtdifference = [];
             for (let index = 0; index < cidades.length; index++) {
-                gmtdifference[index] = cidadefuso[cidades[index]];
+                // gmtdifference[index] = cidadefuso[cidades[index]];
+                if (horariosDB.zones[cidades[index]] == undefined) {
+                    gmtdifference[index] = undefined;
+                    paises[index] = undefined;
+                } else {
+                    gmtdifference[index] = horariosDB.zones[cidades[index]].gmtOffset / 3600;
+                    paises[index] = horariosDB.zones[cidades[index]].countryName;
+                }
+
                 // console.log(cidades[index] + "(+" + n(gmtdifference[0]) + ") - " + cidadefuso[cidades[index]] + "(+" + n(gmtdifference[0]) + ") - " + gmtdifference[index]);
             }
             return gmtdifference
@@ -74,18 +85,14 @@
             return date = [n(now.getDate()), months[now.getMonth()], now.getFullYear()].join('/');
         }
 
-        function adicionaBandeirinha() {
-
-
-            ((cidades[0] == undefined) ? $("#time").empty() : ((gmtdifference[0] == undefined) ? $("#time").empty() : $('#time').empty().append("<div>" + returnTimeAdded(gmtdifference[0]) + "</div>" + "<div class='dataPrincipal'>" + cidades[0] + "(" + (gmtdifference[0] < 0 ? "-" : "+") + n(gmtdifference[0]) + ") - " + returnDateAdded(gmtdifference[0]) + "</div>")));
-
-
-            // ((cidades[1] == undefined) ? $("#time2").empty() : ((gmtdifference[1] == undefined) ? $("#time2").empty() : $('#time2').empty().append("<div>" + returnTimeAdded(gmtdifference[1]) + "</div>" + "<div class='data'>" + cidades[1] + "(" + (gmtdifference[1] < 0 ? "-" : "+") + n(gmtdifference[1]) + ") - " + returnDateAdded(gmtdifference[1]) + "</div>")));
-            // ((cidades[2] == undefined) ? $("#time3").empty() : ((gmtdifference[2] == undefined) ? $("#time3").empty() : $('#time3').empty().append("<div>" + returnTimeAdded(gmtdifference[2]) + "</div>" + "<div class='data'>" + cidades[2] + "(" + (gmtdifference[2] < 0 ? "-" : "+") + n(gmtdifference[2]) + ") - " + returnDateAdded(gmtdifference[2]) + "</div>")));
-            // ((cidades[3] == undefined) ? $("#time4").empty() : ((gmtdifference[3] == undefined) ? $("#time4").empty() : $('#time4').empty().append("<div>" + returnTimeAdded(gmtdifference[3]) + "</div>" + "<div class='data'>" + cidades[3] + "(" + (gmtdifference[3] < 0 ? "-" : "+") + n(gmtdifference[3]) + ") - " + returnDateAdded(gmtdifference[3]) + "</div>")));
-            // ((cidades[4] == undefined) ? $("#time5").empty() : ((gmtdifference[4] == undefined) ? $("#time5").empty() : $('#time5').empty().append("<div>" + returnTimeAdded(gmtdifference[4]) + "</div>" + "<div class='data'>" + cidades[4] + "(" + (gmtdifference[4] < 0 ? "-" : "+") + n(gmtdifference[4]) + ") - " + returnDateAdded(gmtdifference[4]) + "</div>")));
-            // ((cidades[5] == undefined) ? $("#time6").empty() : ((gmtdifference[5] == undefined) ? $("#time6").empty() : $('#time6').empty().append("<div>" + returnTimeAdded(gmtdifference[5]) + "</div>" + "<div class='data'>" + cidades[5] + "(" + (gmtdifference[5] < 0 ? "-" : "+") + n(gmtdifference[5]) + ") - " + returnDateAdded(gmtdifference[5]) + "</div>")));
-            // ((cidades[6] == undefined) ? $("#time7").empty() : ((gmtdifference[6] == undefined) ? $("#time7").empty() : $('#time7').empty().append("<div>" + returnTimeAdded(gmtdifference[6]) + "</div>" + "<div class='data'>" + cidades[6] + "(" + (gmtdifference[6] < 0 ? "-" : "+") + n(gmtdifference[6]) + ") - " + returnDateAdded(gmtdifference[6]) + "</div>")));
+        function appendBandeira(cidades, gmtdifference) {
+            ((cidades[0] == undefined) ? $("#time0").remove() : ((gmtdifference[0] == undefined) ? $("#time0").remove() : $('#time0').empty().append("<img id='bandeira0' class='bandeiraPrincipal' src='png-countries/" + paises[0] + ".png'>")));
+            ((cidades[1] == undefined) ? $("#time1").remove() : ((gmtdifference[1] == undefined) ? $("#time1").remove() : $('#time1').empty().append("<img id='bandeira1' class='bandeira' src='png-countries/" + paises[1] + ".png'>")));
+            ((cidades[2] == undefined) ? $("#time2").remove() : ((gmtdifference[2] == undefined) ? $("#time2").remove() : $('#time2').empty().append("<img id='bandeira2' class='bandeira' src='png-countries/" + paises[2] + ".png'>")));
+            ((cidades[3] == undefined) ? $("#time3").remove() : ((gmtdifference[3] == undefined) ? $("#time3").remove() : $('#time3').empty().append("<img id='bandeira3' class='bandeira' src='png-countries/" + paises[3] + ".png'>")));
+            ((cidades[4] == undefined) ? $("#time4").remove() : ((gmtdifference[4] == undefined) ? $("#time4").remove() : $('#time4').empty().append("<img id='bandeira4' class='bandeira' src='png-countries/" + paises[4] + ".png'>")));
+            ((cidades[5] == undefined) ? $("#time5").remove() : ((gmtdifference[5] == undefined) ? $("#time5").remove() : $('#time5').empty().append("<img id='bandeira5' class='bandeira' src='png-countries/" + paises[5] + ".png'>")));
+            ((cidades[6] == undefined) ? $("#time6").remove() : ((gmtdifference[6] == undefined) ? $("#time6").remove() : $('#time6').empty().append("<img id='bandeira6' class='bandeira' src='png-countries/" + paises[6] + ".png'>")));
         }
 
         // FUNÇÃO QUE GERA O LOOP PARA ATUALIZAR E PREEENCHER OS HORARIOS NO DOM.
@@ -93,13 +100,31 @@
 
             // set the content of the element with the ID time to the formatted string
             // ((cidades[0] == undefined) ? $("#time").empty() : ((gmtdifference[0] == undefined) ? $("#time").empty() : $('#time').empty().append("<div>" + returnTimeAdded(gmtdifference[0]) + "</div>" + "<div class='dataPrincipal'>" + cidades[0] + "(" + (gmtdifference[0] < 0 ? "-" : "+") + n(gmtdifference[0]) + ") - " + returnDateAdded(gmtdifference[0]) + "</div>")));
-            ((cidades[0] == undefined) ? $("#time").empty() : ((gmtdifference[0] == undefined) ? $("#time").empty() : $('#time').empty().append("<div>" + returnTimeAdded(gmtdifference[0]) + "</div>" + "<div class='dataPrincipal'>" + cidades[0] + "(" + (gmtdifference[0] < 0 ? "-" : "+") + n(gmtdifference[0]) + ") - " + returnDateAdded(gmtdifference[0]) + "</div>")));
-            ((cidades[1] == undefined) ? $("#time2").empty() : ((gmtdifference[1] == undefined) ? $("#time2").empty() : $('#time2').empty().append("<div>" + returnTimeAdded(gmtdifference[1]) + "</div>" + "<div class='data'>" + cidades[1] + "(" + (gmtdifference[1] < 0 ? "-" : "+") + n(gmtdifference[1]) + ") - " + returnDateAdded(gmtdifference[1]) + "</div>")));
-            ((cidades[2] == undefined) ? $("#time3").empty() : ((gmtdifference[2] == undefined) ? $("#time3").empty() : $('#time3').empty().append("<div>" + returnTimeAdded(gmtdifference[2]) + "</div>" + "<div class='data'>" + cidades[2] + "(" + (gmtdifference[2] < 0 ? "-" : "+") + n(gmtdifference[2]) + ") - " + returnDateAdded(gmtdifference[2]) + "</div>")));
-            ((cidades[3] == undefined) ? $("#time4").empty() : ((gmtdifference[3] == undefined) ? $("#time4").empty() : $('#time4').empty().append("<div>" + returnTimeAdded(gmtdifference[3]) + "</div>" + "<div class='data'>" + cidades[3] + "(" + (gmtdifference[3] < 0 ? "-" : "+") + n(gmtdifference[3]) + ") - " + returnDateAdded(gmtdifference[3]) + "</div>")));
-            ((cidades[4] == undefined) ? $("#time5").empty() : ((gmtdifference[4] == undefined) ? $("#time5").empty() : $('#time5').empty().append("<div>" + returnTimeAdded(gmtdifference[4]) + "</div>" + "<div class='data'>" + cidades[4] + "(" + (gmtdifference[4] < 0 ? "-" : "+") + n(gmtdifference[4]) + ") - " + returnDateAdded(gmtdifference[4]) + "</div>")));
-            ((cidades[5] == undefined) ? $("#time6").empty() : ((gmtdifference[5] == undefined) ? $("#time6").empty() : $('#time6').empty().append("<div>" + returnTimeAdded(gmtdifference[5]) + "</div>" + "<div class='data'>" + cidades[5] + "(" + (gmtdifference[5] < 0 ? "-" : "+") + n(gmtdifference[5]) + ") - " + returnDateAdded(gmtdifference[5]) + "</div>")));
-            ((cidades[6] == undefined) ? $("#time7").empty() : ((gmtdifference[6] == undefined) ? $("#time7").empty() : $('#time7').empty().append("<div>" + returnTimeAdded(gmtdifference[6]) + "</div>" + "<div class='data'>" + cidades[6] + "(" + (gmtdifference[6] < 0 ? "-" : "+") + n(gmtdifference[6]) + ") - " + returnDateAdded(gmtdifference[6]) + "</div>")));
+
+            // if (cidades[0] == undefined || gmtdifference[0] == undefined) {
+            //     $("#time0").empty();
+            // } else {
+            //     $('#time0').children(".contband").remove();
+            //     $('#time0').append("<div class='contband'><div>" + returnTimeAdded(gmtdifference[0]) + "</div>" + "<div class='dataPrincipal'>" + cidades[0] + " - " + returnDateAdded(gmtdifference[0]) + "</div></div>");
+            // }
+
+            for (let index = 0; index < cidades.length; index++) {
+                if (cidades[index] == undefined || gmtdifference[index] == undefined) {
+                    $("#time" + index).empty();
+                } else {
+                    $('#time' + index).children(".contband").remove();
+                    $('#time' + index).append("<div class='contband'><div>" + returnTimeAdded(gmtdifference[index]) + "</div>" + "<div class='" + (index == 0 ? "dataPrincipal" : "data") + "'>" + cidades[index] + " - " + returnDateAdded(gmtdifference[index]) + "</div></div>");
+                }
+            }
+
+
+            // ((cidades[0] == undefined) ? $("#time").empty() : ((gmtdifference[0] == undefined) ? $("#time").empty() : $('#time').children("#contband").remove()$('#time').append("<img id='bandeira' class='bandeiraPrincipal' src='png-countries/france.png'><div id='contband'><div>" + returnTimeAdded(gmtdifference[0]) + "</div>" + "<div class='dataPrincipal'>" + cidades[0] + " - " + returnDateAdded(gmtdifference[0]) + "</div></div>")));
+            // ((cidades[1] == undefined) ? $("#time2").empty() : ((gmtdifference[1] == undefined) ? $("#time2").empty() : $('#time2 > #contband').empty().append("<div id='contband'><div>" + returnTimeAdded(gmtdifference[1]) + "</div>" + "<div class='data'>" + cidades[1] + " - " + returnDateAdded(gmtdifference[1]) + "</div></div>")));
+            // ((cidades[2] == undefined) ? $("#time3").empty() : ((gmtdifference[2] == undefined) ? $("#time3").empty() : $('#time3 > #contband').empty().append("<div id='contband'><div>" + returnTimeAdded(gmtdifference[2]) + "</div>" + "<div class='data'>" + cidades[2] + " - " + returnDateAdded(gmtdifference[2]) + "</div></div>")));
+            // ((cidades[3] == undefined) ? $("#time4").empty() : ((gmtdifference[3] == undefined) ? $("#time4").empty() : $('#time4 > #contband').empty().append("<div id='contband'><div>" + returnTimeAdded(gmtdifference[3]) + "</div>" + "<div class='data'>" + cidades[3] + " - " + returnDateAdded(gmtdifference[3]) + "</div></div>")));
+            // ((cidades[4] == undefined) ? $("#time5").empty() : ((gmtdifference[4] == undefined) ? $("#time5").empty() : $('#time5 > #contband').empty().append("<div id='contband'><div>" + returnTimeAdded(gmtdifference[4]) + "</div>" + "<div class='data'>" + cidades[4] + " - " + returnDateAdded(gmtdifference[4]) + "</div></div>")));
+            // ((cidades[5] == undefined) ? $("#time6").empty() : ((gmtdifference[5] == undefined) ? $("#time6").empty() : $('#time6 > #contband').empty().append("<div id='contband'><div>" + returnTimeAdded(gmtdifference[5]) + "</div>" + "<div class='data'>" + cidades[5] + " - " + returnDateAdded(gmtdifference[5]) + "</div></div>")));
+            // ((cidades[6] == undefined) ? $("#time7").empty() : ((gmtdifference[6] == undefined) ? $("#time7").empty() : $('#time7 > #contband').empty().append("<div id='contband'><div>" + returnTimeAdded(gmtdifference[6]) + "</div>" + "<div class='data'>" + cidades[6] + " - " + returnDateAdded(gmtdifference[6]) + "</div></div>")));
 
             // console.log(cidades, gmtdifference)
 
@@ -108,6 +133,7 @@
         }
 
         // FUNÇÃO QUE INICIALIZA O LOOP DE HORARIOS AO ENTRAR NA PÁGINA
+        appendBandeira(cidades, gmtdifference)
         updateClock(cidades, gmtdifference)
 
         // FUNÇÃO PARA PARAR O LOOP ATUAL E COMEÇAR UM NOVO LOOP.
