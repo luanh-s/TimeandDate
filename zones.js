@@ -2974,6 +2974,34 @@ var horariosDB = {
             zoneName: "Africa/Harare",
             gmtOffset: "7200",
             timestamp: "1581128530"
+        },
+        'America/Dallas': {
+            countryCode: "US",
+            countryName: "United States",
+            zoneName: "America/Dallas",
+            gmtOffset: "-10800",
+            timestamp: "1581128530"
+        },
+        'America/Miami': {
+            countryCode: "US",
+            countryName: "United States",
+            zoneName: "America/Miami",
+            gmtOffset: "-7200",
+            timestamp: "1581128530"
+        },
+        'Asia/Xiamen': {
+            countryCode: "CN",
+            countryName: "China",
+            zoneName: "Asia/Xiamen",
+            gmtOffset: "39600",
+            timestamp: "1581128530"
+        },
+        'Asia/New Delhi': {
+            countryCode: "IN",
+            countryName: "India",
+            zoneName: "Asia/New Delhi",
+            gmtOffset: "30600",
+            timestamp: "1581128530"
         }
     }
 }

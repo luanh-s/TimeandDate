@@ -155,7 +155,7 @@ img {
 
 @media (min-width: 1000px) {
     .time {
-        height: 30vh;
+        height: 20vh;
         width: 33vw;
         font-size: 5vw;
         display: inline-flex;
